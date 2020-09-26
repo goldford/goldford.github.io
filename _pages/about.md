@@ -12,4 +12,6 @@ Nice to meet you. I'm a PhD Candidate at the University of British Columbia. I a
 
 What else? I don't have a favorite colour (I don't think it's fair to choose), I enjoy cycling and running, and doing creative / artistic things. I used to [film stuff] (https://www.imdb.com/name/nm4531223/), write and perform comedy, and had a couple of exhibits in the vein of new media / installation art, and I might again someday!
 
+ [this repository](https://github.com/academicpages/academicpages.github.io)
+
 Hit me up on the Twitter! @websandflows
