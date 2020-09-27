@@ -11,21 +11,22 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* Ph.D in marine ecosystem modelling, University of British Columbia (candidate)
+* M.E.S. in spatial optimization of river restoriation, Dalhousie University
+* B.Sc. (Env; maj: ecology) University of Guelph
+
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2018-2019: Teaching Assistant
+  * Master of Data Science Program, University of British Columbia
+  * Courses: Supervised Machine Learning II, Data Visualization I
+  * Supervisor: Michael Gelbart, Firas Moosvi
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2013-2018: various positions
+  * Department of Fisheries & Oceans, Government of Canada
+  * Duties included: marine spatial planning advisor and coordinator, GIS specialist, physical scientist, science liaison
+  * Supervisor: various
   
 Skills
 ======
@@ -56,4 +57,5 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Former Executive Director of TEDxHalifax (volunteer)
+* Assistant Coach for the Guelph Special Olympics Basketball Team
