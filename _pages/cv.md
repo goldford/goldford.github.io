@@ -29,7 +29,7 @@ Work experience
   * Duties included: marine spatial planning advisor and coordinator, GIS specialist, physical scientist, science liaison
   * Supervisor: various
   
-* Please check out my LinkedIn or contact me for my full CV [LinkedIn](https://www.linkedin.com/in/greig-oldford-1616385/)
+* Please check out my [LinkedIn](https://www.linkedin.com/in/greig-oldford-1616385/) or contact me for my full CV 
   
 Skills
 ======
