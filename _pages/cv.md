@@ -16,7 +16,7 @@ Education
 * B.Sc. (Env; maj: ecology) University of Guelph
 
 
-Work experience
+Work experience 
 ======
 * 2018-2019: Teaching Assistant
   * Master of Data Science Program, University of British Columbia
@@ -27,6 +27,8 @@ Work experience
   * Department of Fisheries & Oceans, Government of Canada
   * Duties included: marine spatial planning advisor and coordinator, GIS specialist, physical scientist, science liaison
   * Supervisor: various
+  
+* Please check out my LinkedIn or send a request for my full CV! LinkedIn("https://www.linkedin.com/in/greig-oldford-1616385/")
   
 Skills
 ======
