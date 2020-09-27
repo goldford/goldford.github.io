@@ -47,6 +47,19 @@ Skills
 * Research Design and Coordination 
 * Proposal Writing
 
+Awards, Scholarships, Grants
+======
+* UBC President's Academic Excellence Initiative PhD Award (2020)
+* Ocean Leaders Fellowship (2019-2021)
+* UBC Faculty of Science PhD Tuition Award (2018-2020)
+* UBC Faculty of Science Graduate Award (2018)
+* MITACS Accelerate PhD Fellowship (2018-2021)
+	* Award Value: $110,000, PI: Prof. V. Christensen)
+* NSERC IPS Grant (2009-2011)
+	* Award Value: $42,000
+* Neil Munro Parks & Protected Areas Award (2010)
+* ESRI Canada Scholarship (2007) 
+
 
 Publications
 ======
