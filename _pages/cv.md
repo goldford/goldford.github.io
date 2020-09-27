@@ -29,16 +29,24 @@ Work experience
   * Duties included: marine spatial planning advisor and coordinator, GIS specialist, physical scientist, science liaison
   * Supervisor: various
   
-* Please check out my LinkedIn or send a request for my full CV! LinkedIn("https://www.linkedin.com/in/greig-oldford-1616385/")
+* Please check out my LinkedIn or send a request for my full CV! [LinkedIn]https://www.linkedin.com/in/greig-oldford-1616385/)
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* "Data Science" 
+	* supervised machine learning 
+	* cluster analysis 
+	* data visualization 
+	* data wrangling
+* Geospatial analysis (ArcMap, QGIS, R, Python)
+* Network analysis (Gephii, igraph, ggraph, networkx, others)
+* Programming / scripting (R, Python, VB.NET, C++, Javascript)
+* Ecosystem modelling (Ecopath w/ Ecosim / EwE)
+* Database design and management (MySQL, SQL, SQL Server, Geodatabases, Google Fusion)
+* Statistical Analyses
+* Research Design and Coordination 
+* Proposal Writing
+
 
 Publications
 ======
