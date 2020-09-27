@@ -9,11 +9,11 @@ repair), and removal (e.g. dam removal and aging infrastructure). Barrier priori
 potentially large habitat patches quickly and effectively and (ii) avoid impacts prior to occurrence in line with the mitigation hierarchy
 (i.e. avoid then minimize then mitigate).'
 date: 2016-02-01
-venue: 'River Research and Applications.'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
+venue: 'River Research and Applications'
+paperurl: '(http://goldford.github.io/files/oldford_001.pdf)'
 citation: 'McKay SK, Cooper AR, Diebel MW, Elkins D, Oldford G, Roghair C, Wieferich D. (2016). &quot;Informing Watershed Connectivity Barrier Prioritization Decisions: A Synthesis..&quot; <i>River Research and Applications. 1</i>. 33(6).'
 ---
-This paper is about the number 1. The number 2 is left for future work.
+This paper synthesizes 46 watershed-scale barrier planning studies and presents a procedure to guide barrier prioritization associated with connectivity for aquatic organisms.
 
 [Download paper here](http://goldford.github.io/files/oldford_001.pdf)
 
