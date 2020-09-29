@@ -1,7 +1,7 @@
 ---
 title: "Opinion: It’s time to call out denialism — on racism and on climate change."
 collection: publications
-permalink: /publication/2016-02-01-Informing-Watershed-Connectivity-Prioritization
+permalink: /publication/2020-06-04-OpEd-Denialism
 excerpt: 'Everyone is entitled to their opinion. But newspapers — especially mass media outlets — must stick to facts and be held accountable when they do not.'
 date: 2020-06-04
 venue: 'The National Observer'
