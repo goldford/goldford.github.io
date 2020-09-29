@@ -6,7 +6,7 @@ excerpt: 'This paper synthesizes 46 watershed-scale barrier planning studies and
 date: 2016-02-01
 venue: 'River Research and Applications'
 paperurl: '(http://goldford.github.io/files/oldford_001.pdf)'
-citation: 'McKay SK, Cooper AR, Diebel MW, Elkins D, Oldford G, Roghair C, Wieferich D. (2016). &quot;Informing Watershed Connectivity Barrier Prioritization Decisions: A Synthesis..&quot; <i>River Research and Applications. 1</i>. 33(6).'
+citation: 'McKay SK, Cooper AR, Diebel MW, Elkins D, <b>Oldford G</b>, Roghair C, Wieferich D. (2016). &quot;Informing Watershed Connectivity Barrier Prioritization Decisions: A Synthesis..&quot; <i>River Research and Applications</i>. 33(6).'
 ---
 Water resources and transportation infrastructure such as dams and culverts provide countless socio-economic benefits; however, this infrastructure
 can also disconnect the movement of organisms, sediment, and water through river ecosystems. Trade-offs associated with these
