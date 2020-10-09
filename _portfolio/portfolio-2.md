@@ -1,5 +1,5 @@
 ---
-title: "Marine Spatial Planning in Burrard Inlet Overview (2019)"
+title: "Marine Spatial Planning in Burrard Inlet: Overview of Decision Support and Technical Aspects (2020)"
 excerpt: "Marine Spatial Planning has many moving parts. As part of a team of grad students I helped produce an online 'story map' giving an interactive overview of technical aspects for the Tsleil Waututh First Nation. <br/><img src='/images/storymap.png' width='400px%'>"
 collection: portfolio
 ---
