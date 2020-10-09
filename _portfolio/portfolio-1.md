@@ -1,7 +1,7 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Marine Ecosystem Modelling of the Salish Sea"
+excerpt: "Marine ecosystem models to investigate changes in salmon survival and to support marine spatial planning<br/><img src='/images/wordcloud.png'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+Since 2018, I've been following my dream of becoming an ecosystem modeller and quantitative ecologist at the University of British Columbia's Institute for Oceans and Fisheries. 
