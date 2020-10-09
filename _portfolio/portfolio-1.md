@@ -1,6 +1,6 @@
 ---
 title: "Marine Ecosystem Modelling of the Salish Sea"
-excerpt: "Marine ecosystem models to investigate changes in salmon survival and to support marine spatial planning<br/><img src='/images/wordcloud.png'>"
+excerpt: "Marine ecosystem models to investigate changes in salmon survival and to support marine spatial planning<br/><img src='/images/wordcloud.png' width="400px%">"
 collection: portfolio
 ---
 
