@@ -1,0 +1,10 @@
+---
+title: "A Network of Marine Protected Areas in the Northern Shelf Bioregion"
+excerpt: "Working collaboratively to establish a network of Marine Protected Areas in British Columbia, Canada<br/><iframe width="400" height="225" src="https://www.youtube.com/embed/71ZZ9CTzXWc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"
+collection: portfolio
+---
+
+I worked as a Federal government scientist and planner in collaboration with 17 First Nations, the Provincial Government, industry, NGO's, and stakeholders to plan a network of Marine Protected Areas in Canada's 'Northern Shelf Bioregion'.  
+<a href="https://www.mpanetwork.ca"></a>
+My role was to help coordinate technical aspects of planning as co-lead of the technical planning committee, listen to and address concerns of collaborating parties, liase with science colleagues and DFO econommists, manage staff and contracts, and play a generally supporting role as marine spatial planning advisor. 
+I learned a great deal from this work experience and deeply appreciate the opportunity to work so closely with such a variety of people. 
