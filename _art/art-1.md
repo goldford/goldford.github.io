@@ -8,5 +8,5 @@ Lately, I've been trying to detach myself from anything metapohorical or real-wo
 I tend to want to make models of the world and so this is my attempt to reject that. 
 I'm focusing more on abstract, geometric motifs. 
 More to come...
-<img src='/images/art.png' width='400px%'>
+<img src='/images/art.png' width='400px%'><br/>
 <b>Spray paint on panels</b>
