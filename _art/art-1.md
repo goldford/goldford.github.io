@@ -1,6 +1,6 @@
 ---
 title: "Recent Experiments"
-excerpt: "Some new motifs and concepts I've been playing with. <b>spray paint on wood panels</b><br/><img src='/images/art.png' width='400px%'>"
+excerpt: "Some new motifs and concepts I've been playing with. <b>Spray paint on wood panels</b><br/><img src='/images/art.png' width='400px%'>"
 collection: art
 ---
 
