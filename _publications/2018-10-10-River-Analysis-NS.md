@@ -1,5 +1,5 @@
 ---
-title: "Dams, Culverts, and Cumulative Effects: Quantifying Cumulative Effects of Barriers to Longitudinal Connectivity on Three Rivers 
+title: "Dams, culverts, and cumulative effects: quantifying cumulative effects of barriers to longitudinal connectivity on three rivers 
 in Nova Scotia, Canada. <i>(in prep)</i>"
 collection: publications
 permalink: /publication/2018-10-10-River-Analysis-NS
