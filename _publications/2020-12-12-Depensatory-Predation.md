@@ -1,17 +1,14 @@
 ---
-title: "Depensatory mortality in British Columbia herring populations due to predation by Steller sea lions. <i>(in prep)</i>"
+title: "Depensatory predation may cause catastrophic changes in herring populations <i>(in prep)</i>"
 collection: publications
 permalink: /publication/2020-12-12-Depensatory-Predation
-excerpt: 'We discuss that recent increases in sea lion abundances during the winter herring spawning season in B.C. makes it progressively more difficult to avoid stock collapses.'
-date: 2020-12-12
+excerpt: 'We showed that including depensatory predation rates caused a fundamental change in the fish population dynamics compared with the traditional approach of ignoring predation scenarios in stock assessments.  Increases in pinniped abundance following a history of heavy exploitation make it progressively more difficult to avoid fish stock collapses, and there is evidence of similar impacts for a variety of small pelagic and demersal stocks around the world.'
+date: 2020-10-15
 venue: 'TBD'
-paperurl: '(https://www.nationalobserver.com/2020/06/04/opinion/its-time-call-out-denialism-racism-and-climate-change)'
-citation: 'Walters CW, <b> Oldford G </b>, Licandeo R, Christensen V (2020). &quot;Depensatory mortality in British Columbia herring populations due to predation by Steller sea lions&quot; <i>Fish & Fisheres</i>. <i>(in prep)</i>'
+paperurl: ''
+citation: 'Christensen V, <b>Oldford G</b>, Licandeo R, Walters CW (2020). &quot;Depensatory mortality in British Columbia herring populations due to predation by Steller sea lions&quot; <i>Fish & Fisheres</i>. <i>(in prep)</i>'
 ---
-We found a critical herring biomass threshold that can lead to extinction depending on the Steller sea lion functional response. 
-We discuss that recent increases in sea lion abundances during the winter herring spawning season in B.C. makes it progressively more difficult to avoid stock collapses.  
-Other B.C. stocks like Eulachon may be suffering similar depensatory impacts, and there is evidence of similar impacts for a variety of small pelagic stocks around the world.  
-
-[See article here](https://onlinelibrary.wiley.com/journal/14672979)
+We showed that including depensatory predation rates caused a fundamental change in the fish population dynamics compared with the traditional approach of ignoring predation scenarios in stock assessments.  Increases in pinniped abundance following a history of heavy exploitation make it progressively more difficult to avoid fish stock collapses, and there is evidence of similar impacts for a variety of small pelagic and demersal stocks around the world.
+[article link coming soon](http://goldford.github.io)
 
 Recommended citation: 'Walters, CW, <b> Oldford, G </b>, Licandeo, R, Christensen, V (2020). &quot;Depensatory mortality in British Columbia herring populations due to predation by Steller sea lions&quot; <i>Fish & Fisheres. </i>. <i>(in prep)</i>'
