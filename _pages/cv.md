@@ -7,6 +7,8 @@ redirect_from:
   - /resume
 ---
 
+{% include base_path %}
+
 Education
 ======
 * Ph.D in marine ecosystem modelling, University of British Columbia (candidate)
@@ -63,8 +65,6 @@ Work experience
   * Duties included: marine spatial planning advisor and coordinator, GIS specialist, physical scientist, science liaison
   * Supervisor: various
   
-* Please check out my [LinkedIn](https://www.linkedin.com/in/greig-oldford-1616385/) or contact me for my full CV 
-  
 Skills
 ======
 * "Data Science" 
@@ -81,6 +81,8 @@ Skills
 * Statistical Analyses
 * Research Design and Coordination 
 * Proposal Writing
+
+* Please check out my [LinkedIn](https://www.linkedin.com/in/greig-oldford-1616385/) or contact me for my full CV 
 
 
 
