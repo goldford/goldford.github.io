@@ -1,9 +1,9 @@
 ---
 title: "Dams, culverts, and cumulative effects: quantifying cumulative effects of barriers to longitudinal connectivity on three rivers 
-in Nova Scotia, Canada. <i>(in prep)</i>"
+in Nova Scotia, Canada. <i>(accepted; in revision)</i>"
 collection: publications
 permalink: /publication/2018-10-10-River-Analysis-NS
-excerpt: '<i>(paper under revision and re-submission due to funding, delays, and illness</i>We present a suite of approaches that can be used to quantify and characterize the cumulative effects of different types of 
+excerpt: '<i>(underway - accepted with minor revisions)</i></br>We present a suite of approaches that can be used to quantify and characterize the cumulative effects of different types of 
 riverine barriers. We demonstrate these methods on three river systems in Nova Scotia, Canada, each heavily fragmented by road culverts 
 and dams associated with hydroelectric and other development.'
 date: 2018-10-10
