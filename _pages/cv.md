@@ -11,10 +11,10 @@ redirect_from:
 
 Education
 ======
-* Ph.D in marine ecosystem modelling, University of British Columbia (candidate)
-* M.E.S. in spatial optimization of river restoriation, Dalhousie University
-* Adv.Dip. in Geographic Information Systems, Nova Scotia Community College
-* B.Sc. (Env; maj: Ecology) University of Guelph
+- Ph.D in marine ecosystem modelling, University of British Columbia (candidate)
+- M.E.S. in spatial optimization of river restoriation, Dalhousie University
+- Adv.Dip. in Geographic Information Systems, Nova Scotia Community College
+- B.Sc. (Env; maj: Ecology) University of Guelph
 
 Awards, Scholarships, Grants
 ======
