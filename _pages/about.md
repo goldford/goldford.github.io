@@ -16,4 +16,4 @@ Prior to my PhD research, I worked for the Canadian Government (Fisheries & Ocea
 I enjoy swimming, cycling, and running (and infrequent triathlons), and doing creative / artistic things. I have made [short films](https://www.imdb.com/name/nm4531223/), written and performed comedy, and had a couple of exhibits in the vein of new media / installation art, and I hope to again someday! 
 <b>I also am passionate about ethics, equality, and justice</b>, and believe academics hold a privileged position in society with [corresponding responsibility](https://chomsky.info/19670223/). 
 
-Hit me up on the Twitter! @websandflows
+Hit me up on the Twitter! @greig_oldford
