@@ -1,5 +1,5 @@
 ---
-title: "Pre-European Contact Shoreline Reconstruction through Participatory Mapping - in Collaboration with the Tseil Waututh First Nation (2020-21)"
+title: "Pre-European Contact Shoreline Reconstruction via Participatory Mapping with Indigenous Knowledge Holders - in Collaboration with the Tsleil Waututh First Nation (2020-21)"
 excerpt: "We are collaboratively developing a pre-European contact shoreline to assist the Tsleil Waututh First Nation with reconstructing the location of the shoreline, analysis of intertidal habitat changes, and ecosystem modeling. <br/><img src='/images/shorelinechange.png' width='400px%'>"
 collection: portfolio
 ---
