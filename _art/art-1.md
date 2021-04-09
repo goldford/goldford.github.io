@@ -10,5 +10,4 @@ For my research, I wanted a diagram but feared people would think it would be ho
 So, this illustration is my attempt to depict the most important components and connections - while being visually appealling. 
 Subway maps were a main artistic motif that I used as inspiration. 
 
-<img src='/images/Model_Diagram_2021-03-23.PNG' width='400px%'><br/>
-<b>Illustration</b>
+<img src='/images/Model_Diagram_2021-03-23.PNG' width='600px%'><br/>
