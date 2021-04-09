@@ -19,7 +19,7 @@ Education
 Awards, Scholarships, Grants
 ======
 * UBC President's Academic Excellence Initiative PhD Award (2020)
-* Ocean Leaders Fellowship (2019-2021)
+* Ocean Leaders Award & Fellowship (2019-2021)
 * UBC Faculty of Science PhD Tuition Award (2018-2020)
 * UBC Faculty of Science Graduate Award (2018)
 * MITACS Accelerate PhD Fellowship (present-2021)
