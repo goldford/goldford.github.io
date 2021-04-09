@@ -54,14 +54,16 @@ Leadership
 
 Selected Work Experience 
 ======
+* 2018-present: Applied Research (Marine Ecosystem Science), University of British Columbia
+  * Applied research as PhD fellow supported by the Pacific Salmon Foundation, Fisheries & Oceans Canada (DFO), and the National Science & Engineering Research Council (NSERC) 
+
 * 2018-2019: Teaching Assistant
   * Master of Data Science Program, University of British Columbia
   * Courses: Supervised Machine Learning II, Data Visualization I
   * Supervisor: Michael Gelbart, Firas Moosvi
 
-* 2013-2018: various positions
-  * Department of Fisheries & Oceans, Government of Canada
-  * Duties included: marine spatial planning advisor and coordinator, GIS specialist, physical scientist, science liaison
+* 2013-2018: various positions @ Department of Fisheries & Oceans, Government of Canada
+  * Duties included: marine spatial planning advisor and coordinator, GIS specialist, physical scientist, science-management liaison
   * Supervisor: various
   
 Skills
