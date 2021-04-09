@@ -28,19 +28,19 @@ Awards, Scholarships, Grants
 * Neil Munro Parks & Protected Areas Award (2010)
 * ESRI Canada Scholarship (2007) 
 
-Publications
+Selected Publications
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+Selected Talks
 ======
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
   
-Teaching
+Teaching Experience
 ======
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
@@ -52,7 +52,7 @@ Leadership
 * Executive Director of TEDxHalifax (2009-2013)
 * Assistant Coach for the Guelph Special Olympics Basketball Team
 
-Work experience 
+Selected Work Experience 
 ======
 * 2018-2019: Teaching Assistant
   * Master of Data Science Program, University of British Columbia
@@ -66,6 +66,8 @@ Work experience
   
 Skills
 ======
+* Ecosystem modelling (Ecopath w/ Ecosim / EwE; NEMO)
+* Programming / scripting (R, Python, VB.NET, C++, Javascript; Linux, Windows)
 * "Data Science" 
 	* supervised machine learning 
 	* cluster analysis 
@@ -74,8 +76,6 @@ Skills
 * Geospatial analysis (ArcMap, QGIS, R, Geopandas / Python)
 * Data Visualization (Matplotlib / PyPlot, R, Bokeh, Plotly / Dash, D3.js)
 * Network analysis (Gephii, igraph, ggraph, networkx, others)
-* Programming / scripting (R, Python, VB.NET, C++, Javascript)
-* Ecosystem modelling (Ecopath w/ Ecosim / EwE)
 * Database design and management (MySQL, SQL, SQL Server, Geodatabases, Google Fusion)
 * Statistical Analyses
 * Research Design and Coordination 
