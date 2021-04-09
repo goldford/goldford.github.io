@@ -1,5 +1,5 @@
 ---
-title: "Recent Experiments"
+title: "Recent Experiments (2020-)"
 excerpt: "Some recent motifs and concepts I've been playing with. <br/><i>Spray paint on wood panels</i><br/><img src='/images/art.png' width='400px%'>"
 collection: art
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Pelagic Ecosystem Model 'Subway' Diagram"
+title: "Pelagic Ecosystem Model 'Subway' Diagram (2021)"
 excerpt: "Inspiration: <i> can a visually appealling ecosystem model also be informative??</i>. <br/><i>Illustration</i><br/><img src='/images/Model_Diagram_2021-03-23.PNG' width='400px%'>"
 collection: art
 ---
