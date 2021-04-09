@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
-<i>Note - Please check out my [LinkedIn](https://www.linkedin.com/in/greig-oldford-1616385/) or contact me for my full CV</i> <br>
+<i>Please check out my [LinkedIn](https://www.linkedin.com/in/greig-oldford-1616385/) or contact me for my full CV</i> <br>
 
 Education
 ======
