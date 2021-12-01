@@ -1,5 +1,5 @@
 ---
-title: "Making spatial-temporal marine ecosystem modelling better – A perspective"
+title: "Making spatial-temporal marine ecosystem modelling better"
 collection: publications
 permalink: /publication/2021-10-06-Making-Spatial-Temporal-EcoModels-Better
 excerpt: 'Marine Ecosystem Models (MEMs) are rarely systematically validated and calibrated. This can potentially undermine the credibility and uptake of model output in the policy arenas where it is so direly needed. We identify the main technical hurdles that prevent the MEM community from moving forward, and specify a resolving framewo'
