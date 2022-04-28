@@ -4,4 +4,4 @@ excerpt: "We are collaboratively developing a pre-European contact shoreline to 
 collection: portfolio
 ---
 
-The <a href="https://twnation.ca/">Tsleil Waututh First Nation</a> is leading a project to reconstruct the pre-European contact shoreline and intertidal zone. I'm collaborating by lending a hand with GIS, cartography, and participatory mapping exercises.
+The <a href="https://twnation.ca/">Tsleil Waututh First Nation</a> is leading a project to reconstruct the pre-European contact shoreline and intertidal zone. I assisted with cartography and integrating indigenous knowledge using GIS and I am a co-author of <a href="https://open.library.ubc.ca/soa/cIRcle/collections/facultyresearchandpublications/52383/items/1.0407075">the resulting report</a>. There was a nice bit of coverage by the <a href="https://epaper.vancouversun.com/article/281517934590447">Vancouver Sun</a>, too.
