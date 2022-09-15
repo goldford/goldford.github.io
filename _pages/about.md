@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Nice to meet you. I'm a <b>PhD Candidate</b> at the University of British Columbia in the <b>[Global Ocean Modelling Lab](https://oceans.ubc.ca/villy-christensen/)</b>. 
+Nice to meet you. I'm a <b>PhD Candidate</b> at the University of British Columbia in the <b>[Global Ocean Modelling Lab](https://oceans.ubc.ca/villy-christensen/)</b> and Senior Scientist with Fisheries and Oceans Canada. 
 
 At the UBC Institute for Oceans and Fisheries I have been developing spatially resolved end-to-end marine ecosystem simulation models. 
 These models support scientific research (hypothesis evaluation) and management or policy.</br>
