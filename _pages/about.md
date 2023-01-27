@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 Nice to meet you. I'm a <b>PhD Candidate</b> at the University of British Columbia in the <b>[Global Ocean Modelling Lab](https://oceans.ubc.ca/villy-christensen/)</b> 
-. I am also currently senior marine spatial planning officer with Fisheries and Oceans Canada. 
+. I am also a senior scientist / integrated oceans management advisor with Fisheries and Oceans Canada. 
 
 At the UBC Institute for Oceans and Fisheries I have been developing spatially resolved end-to-end marine ecosystem simulation models. 
 These models support scientific research (hypothesis evaluation) and management or policy.
