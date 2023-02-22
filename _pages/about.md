@@ -19,9 +19,6 @@ While pursing a PhD at UBC's [Institute for Oceans and Fisheries](https://oceans
  Focusing on the Salish Sea, I am using a custom framework (NEMO->Ecospace) to investigate factors affecting early marine survival of juvenile salmon. 
  I have also been investigating multispecies interactions between pinnipeds, killer whales, forage fish, and salmon in the Salish Sea. 
  Finally, I hope to apply approaches at the regional or sub-regional scale that have mainly been applied to date at the global scale (e.g., ensemble modelling) to help improve ecosystem model predictions.
- I am excited to be joining DFO Science, and learning more about everyone's work!
-
-I have also developed custom tools and models for freshwater ecosystems and ecological restoration of rivers as part 
-of my master's degree research. 
+During my masters work and subsequently, I have developed custom tools and models for freshwater ecosystems and ecological restoration of rivers. 
 
 Hit me up on the Twitter! @greig_oldford
