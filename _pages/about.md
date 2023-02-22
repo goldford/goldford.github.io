@@ -23,12 +23,7 @@ As an ecosystem scientist, I am broadly interested in how we can understand the 
  Finally, I have been investigating multispecies interactions between pinnipeds, killer whales, and several fish species. 
 I am excited to be joining DFO Science, and learning more about everyone's work!
 
-My fields of research are <b> applied ecosystem science, ocean ecology and management, landscape ecology and structural connectivity of rivers, 
-environmental science, and ecosystem modelling</b>. Technically, I have skillsets in <b>data science, geographic information systems, 
-and [computer programming](https://www.github.com/goldford/)</b>.
-Prior to my PhD research, I worked for the Canadian Government (Fisheries & Oceans) as a scientist and as a <b>marine spatial planning</b> 
-advisor in Vancouver, British Columbia. 
-Previous to that, I developed custom tools and models for <b>natural resource management</b> and <b>ecological restoration</b> of rivers as part 
+I have also developed custom tools and models for freshwater ecosystems </b> and <b>ecological restoration</b> of rivers as part 
 of my master's degree research. 
 
 I enjoy swimming, cycling, and running (and infrequent triathlons), and [doing creative / artistic things](https://goldford.github.io/art/).
