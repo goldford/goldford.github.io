@@ -9,12 +9,19 @@ redirect_from:
 ---
 
 Nice to meet you. I'm a <b>PhD Candidate</b> at the University of British Columbia in the <b>[Global Ocean Modelling Lab](https://oceans.ubc.ca/villy-christensen/)</b> 
-. I am also a senior scientist / integrated oceans management advisor with Fisheries and Oceans Canada. 
+. I am also a scientist with Fisheries and Oceans Canada. 
 
-At the UBC Institute for Oceans and Fisheries I have been developing spatially resolved end-to-end marine ecosystem simulation models. 
-These models support scientific research (hypothesis evaluation) and management or policy.
-Here, I have been using a custom oceanographic model using high performance computing resources available in Canada (Compute Canada). I am using the NEMO model framework. 
-I have linked this model to an ecosystem model that includes groups from bacteria to whales. For this, I am using the Ecopath-with-Ecosim-and-Ecospace framework.
+I am joining DFO Science after spending most of my 10+ years with DFO in the Ecosystem Management Branch. 
+There, I chiefly acted as a scientist advising and coordinating scientific and technical aspects of marine spatial planning and conservation planning. 
+Much of that has been focused on the Northern Shelf Bioregion MPA network (which was recently endorsed my Canada, BC, and partner First Nations!). 
+I have a background in ecology and environmental science, and returned to school in 2018 to pursue a PhD at UBC with the Institute for Oceans and Fisheries. 
+As an ecosystem scientist, I am broadly interested in how we can understand the structure and function of marine and aquatic ecosystems, and how we can develop approaches to wisely manage them.
+ At UBC, I have been developing spatially resolved end-to-end marine ecosystem simulation models and have developed a custom oceanographic model for the Salish Sea and an ecosystem model for the Strait of Georgia. 
+ I am using this framework to investigate factors affecting early marine survival of juvenile Pacific Salmon in support of the Salish Sea Marine Survival Program. 
+ Broadly, I motivated to use approaches applied to this point to global scale modelling and analysis (e.g., ensemble modelling) and to apply these approaches at the regional or sub-regional scale.
+ I am also investigating the mechanisms through which decadal-scale changes in water properties in the Strait of Georgia are affecting plankton communities and juvenile fish.
+ Finally, I have been investigating multispecies interactions between pinnipeds, killer whales, and several fish species. 
+I am excited to be joining DFO Science, and learning more about everyone's work!
 
 My fields of research are <b> applied ecosystem science, ocean ecology and management, landscape ecology and structural connectivity of rivers, 
 environmental science, and ecosystem modelling</b>. Technically, I have skillsets in <b>data science, geographic information systems, 
