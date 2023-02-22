@@ -17,7 +17,7 @@ As an ecosystem scientist and modeller, I am broadly interested in how we can un
 For example, the [Northern Shelf Bioregion MPA network](https://www.newswire.ca/news-releases/marine-protected-area-network-partners-endorse-plan-to-protect-british-columbia-s-north-coast-848170307.html). 
 While pursing a PhD at UBC's Institute for [Oceans and Fisheries](https://oceans.ubc.ca/) (2018 -), I have been working on simulation models that are end-to-end (i.e., water properties to whales). 
  Focusing on the Salish Sea, I am using a custom framework (NEMO->Ecospace) to investigate factors affecting early marine survival of juvenile salmon. 
- I hope to apply approaches at the regional or sub-regional scale that have mainly been applied to date in global-scale research (e.g., ensemble modelling).
+ I aim to apply approaches at the regional or sub-regional scale that have mainly been applied to date in global-scale research (e.g., ensemble modelling).
  I am currently applying our modelling framework to investigate pathways of effects from water properties to plankton communities to juvenile salmon and forage fish.
  Finally, I have been investigating multispecies interactions between pinnipeds, killer whales, and several fish species. 
 I am excited to be joining DFO Science, and learning more about everyone's work!
