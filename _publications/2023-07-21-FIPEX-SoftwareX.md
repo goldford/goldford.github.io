@@ -1,7 +1,7 @@
 ---
 title: "FIPEX v10.4: An ArcGIS Desktop Add-in for assessing impacts of fish passage barriers and longitudinal connectivity of rivers"
 collection: publications
-permalink: /publication/2023-07-21-FIPEX-SoftwareX.md
+permalink: /publication/2023-07-21-FIPEX-SoftwareX
 excerpt: 'FIPEX v10.4 is designed to decrease the time required to assess the individual and cumulative effects of river barriers to fish passage and to assess river connectivity from headwaters to outflow (i.e., longitudinal connectivity). FIPEX is developed as an open source VB.NET ‘Add-In’ for ArcGIS Desktop (v10.4+) with an option to run R statistical software scripts to calculate the Dendritic Connectivity Index (DCI).'
 date: 2023-07-21
 venue: 'SoftwareX'

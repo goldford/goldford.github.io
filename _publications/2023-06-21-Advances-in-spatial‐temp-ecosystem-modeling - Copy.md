@@ -1,7 +1,7 @@
 ---
 title: "Advances in spatial‐temporal coastal and marine ecosystem modeling using Ecospace (Book Chapter in: Earth Systems and Environmental Sciences)"
 collection: publications
-permalink: /publication/2023-06-21-Advances-in-spatial‐temp-ecosystem-modeling.md
+permalink: /publication/2023-06-21-Advances-in-spatial‐temp-ecosystem-modeling
 excerpt: 'The advancement of ecosystem-based management of aquatic ecosystems should no longer be limited by a lack of tools. However, a lack of comprehensive understanding of the capabilities of existing tools can form a barrier for uptake. With this chapter, we strive to more fully describe one of these tools, the spatial-temporal ecosystem model Ecospace, which is part of the Ecopath with Ecosim (EwE) ecosystem modeling approach and software. Changes and developments in Ecospace have been faster than documented in recent years. Many features of Ecospace, including the most recent that have not been described before, are detailed in this chapter. The applications highlighted showcase the multitude of uses of the spatial application of EwE, which, especially due to expansion of the capabilities to incorporate the effects of environmental change, has facilitated its use outside of fisheries management to protection of biodiversity, ecosystem restoration and environmental impact assessment. New applications of Ecospace can truly contribute to advance modeling of cumulative impacts and management alternatives in marine ecosystems, and can be of interest to inform sectoral and intersectoral policy.'
 date: 2023-06-21
 venue: 'Earth Systems and Environmental Sciences'
