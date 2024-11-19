@@ -54,6 +54,9 @@ Leadership
 
 Selected Work Experience 
 ======
+* 2022-present: Aquatic Ecosystem Scientist, Regional Ecossytem Effects on Fish and Fisheries, Science Branch, Fisheries and Oceans Canada, Vancouver, BC
+  * Applied ecosystem modelling and research supporting fisheries and oceans management. 
+
 * 2018-present: Applied Research (Marine Ecosystem Science), University of British Columbia
   * Applied research as PhD fellow supported by the Pacific Salmon Foundation, Fisheries & Oceans Canada (DFO), and the National Science & Engineering Research Council (NSERC) 
 
