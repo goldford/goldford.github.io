@@ -13,7 +13,7 @@ I am also a scientist with Fisheries and Oceans Canada.
 
 As an ecosystem scientist and modeller, I am broadly interested in understanding the structure and function of marine and aquatic ecosystems and in approaches to wisely manage them.
  In the Canadian DFO Ecosystem Management Branch, I was a scientist advising and coordinating scientific and technical aspects of marine spatial planning and conservation planning. 
-For example, the [Northern Shelf Bioregion MPA network](https://www.newswire.ca/news-releases/marine-protected-area-network-partners-endorse-plan-to-protect-british-columbia-s-north-coast-848170307.html) for which I received the DFO Prix D'Excellence in 2023. 
+For example, the [Northern Shelf Bioregion MPA network](https://www.newswire.ca/news-releases/marine-protected-area-network-partners-endorse-plan-to-protect-british-columbia-s-north-coast-848170307.html) for which the team received the DFO Canada Prix D'Excellence in 2023 and the BC Premier's Award in 2024. 
 
 While pursuing a PhD at UBC's [Institute for Oceans and Fisheries](https://oceans.ubc.ca/) (2018 -), I have been working on simulation models that aim to understand long-term ecosystem trends using an end-to-end modelling approach (i.e., from physics to fisheries). 
  Focusing on the Salish Sea, I am using a custom framework (NEMO->Ecospace) to investigate factors affecting early marine survival of juvenile salmon. 
