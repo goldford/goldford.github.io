@@ -139,7 +139,7 @@ p { margin: 0 0 1em; }
   background: linear-gradient(90deg, rgba(2, 10, 20, .88) 0%, rgba(2, 10, 20, .55) 38%, rgba(2, 10, 20, 0) 62%), linear-gradient(0deg, var(--abyss) 0%, transparent 22%); }
 .hero__inner { padding-top: 110px; padding-bottom: 90px; pointer-events: none; }
 .hero__inner a, .hero__inner button { pointer-events: auto; }
-.hero__title { font: italic 600 clamp(64px, 11vw, 148px)/.86 var(--f-display); letter-spacing: -.02em; margin: 0 0 28px; text-shadow: 0 0 40px rgba(127, 227, 255, .18); }
+.hero__title { font: italic 600 clamp(52px, 7.6vw, 104px)/.9 var(--f-display); letter-spacing: -.015em; margin: 0 0 24px; text-shadow: 0 0 40px rgba(127, 227, 255, .18); }
 .hero__lede { font-size: clamp(18px, 1.8vw, 23px); line-height: 1.5; max-width: 30ch; color: var(--ink); margin-bottom: 22px; text-shadow: 0 1px 12px rgba(2, 10, 20, .9); }
 .hero__lede { max-width: 34ch; }
 .hero__sub { max-width: 46ch; color: var(--ink-2); font-size: 16.5px; margin-bottom: 22px; text-shadow: 0 1px 10px rgba(2, 10, 20, .9); }
