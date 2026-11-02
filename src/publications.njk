@@ -25,9 +25,14 @@ description: Publications by Greig Oldford, including journal articles, preprint
       <label class="search"><span class="sr-only">Search publications</span><input type="search" placeholder="Search titles, authors, journals" data-search></label>
     </div>
     <div id="publist">
-      <ol class="publist">
-        {% for p in publications %}{% include "pub.njk" %}{% endfor %}
-      </ol>
+    {% for y in publications | uniqueYears("year") %}
+      <div class="yeargroup" data-group>
+        <h2 class="yeargroup__year mono">{{ y }}</h2>
+        <ol class="publist">
+          {% for p in publications | where("year", y) %}{% include "pub.njk" %}{% endfor %}
+        </ol>
+      </div>
+    {% endfor %}
     </div>
     <p class="muted pubs__more">Much of my work also lives outside journals: in open ocean and ecosystem models, in advice to management and in expert testimony. See <a href="/research/#code">code and models</a> and <a href="/talks/">talks and testimony</a>.</p>
   </div>
