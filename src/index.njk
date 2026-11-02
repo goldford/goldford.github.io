@@ -1,0 +1,191 @@
+---
+layout: base.njk
+bodyClass: home
+pageJs: /assets/js/foodweb.js
+---
+{% set journals = publications | where("type", "journal") %}
+<section class="hero" aria-labelledby="hero-title">
+  <canvas class="hero__canvas" data-foodweb aria-hidden="true"></canvas>
+  <div class="hero__scrim" aria-hidden="true"></div>
+  <div class="wrap hero__inner">
+    <p class="eyebrow">Ecosystem science for ocean decisions · Pacific Canada</p>
+    <h1 id="hero-title" class="hero__title">Greig<br>Oldford</h1>
+    <p class="hero__lede">I use ecosystem science to inform sustainable management of fisheries and oceans.</p>
+    <p class="hero__sub">My models trace change from physics to fisheries using techniques from ecosystem ecology, computer science, ocean and atmospheric sciences, and fisheries science.</p>
+    <ul class="hero__roles">
+      {% for a in site.affiliations %}<li>{{ a }}</li>{% endfor %}
+    </ul>
+    <div class="hero__actions">
+      <a class="btn btn--glow" href="#impact">Where the work is used</a>
+      <a class="btn" href="/research/">Explore the research</a>
+    </div>
+    <p class="hero__hint mono" aria-hidden="true">Hover a species · energy flows up the food web</p>
+  </div>
+  <a class="hero__scroll" href="#about" aria-label="Scroll to about"><span></span></a>
+</section>
+
+<section id="about" class="section about">
+  <div class="wrap about__grid">
+    <figure class="portrait reveal">
+      <img src="{{ site.headshot }}" alt="{{ site.headshot_alt }}" width="480" height="480">
+      <figcaption class="mono">{{ site.location }}</figcaption>
+    </figure>
+    <div class="about__text reveal">
+      <p class="eyebrow">About</p>
+      <h2 class="display">Between science and management</h2>
+      <p class="lead">I'm an ecosystem scientist with Fisheries and Oceans Canada and a PhD candidate in UBC's Global Ocean Modelling Lab with Villy Christensen. My work sits where science meets management: building the evidence, then helping decision-makers use it.</p>
+      <p>For a decade I led technical work on marine spatial planning, including the analyses behind the <a href="/research/#mpa">Great Bear Sea MPA network</a>, co-developed with 17 First Nations and the Province of BC. I have briefed senior management, steered Canadian Science Advisory Secretariat peer reviews, and testified to Parliament's Fisheries Committee on how DFO uses science.</p>
+      <p>Today I build end-to-end ecosystem models of the Strait of Georgia, starting from <a href="/research/#hotssea">HOTSSea</a>, a four-decade ocean hindcast, to weigh competing explanations for salmon declines, such as food supply versus seal predation, before management acts on either. I also develop <a href="/research/#rivers">FIPEX</a>, which agencies use to decide which river barriers to fix first.</p>
+      <dl class="stats">
+        <div><dt>13+</dt><dd>years in DFO science, oceans management and planning</dd></div>
+        <div><dt>1980–2018</dt><dd>Salish Sea ocean physics reconstructed at 1.5 km</dd></div>
+        <div><dt>17</dt><dd>First Nations partners in the Great Bear Sea MPA network</dd></div>
+        <div><dt>{{ journals | length }}</dt><dd>peer-reviewed articles, plus software, chapters and reports</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="impact" class="section impact" aria-labelledby="impact-title">
+  <div class="wrap">
+    <p class="eyebrow">From science to decisions</p>
+    <h2 id="impact-title" class="display">Where the work is used</h2>
+    <p class="section__intro">Research matters most when it changes what people decide. Here is where my work has fed into management, policy and planning.</p>
+    <div class="impacts">
+      <article class="impactcard reveal" style="--c: var(--kelp)">
+        <p class="impactcard__tag mono">Marine conservation</p>
+        <h3>Designing a protected area network</h3>
+        <p>Gap and representation analyses that measured how existing and proposed protection met conservation objectives for the Great Bear Sea MPA network, endorsed in 2023.</p>
+        <p class="impactcard__out mono">→ Network action plan · DFO Prix d'Excellence · BC Premier's Award</p>
+      </article>
+      <article class="impactcard reveal" style="--c: var(--coral)">
+        <p class="impactcard__tag mono">Policy</p>
+        <h3>Advising Parliament on science at DFO</h3>
+        <p>Expert testimony to the House of Commons Fisheries Committee on data integration and how the department scopes its science questions, including seal–salmon interactions.</p>
+        <p class="impactcard__out mono">→ Committee report to the Minister, 48 recommendations (2023)</p>
+      </article>
+      <article class="impactcard reveal" style="--c: var(--sun)">
+        <p class="impactcard__tag mono">Fisheries &amp; salmon</p>
+        <h3>Testing what drives salmon declines</h3>
+        <p>Ecosystem models that compare bottom-up food supply with top-down predation for juvenile coho and Chinook, so environmental causes are tested alongside seal predation before management acts.</p>
+        <p class="impactcard__out mono">→ Advice to the Salish Sea Marine Survival Project and DFO management</p>
+      </article>
+      <article class="impactcard reveal" style="--c: var(--glow)">
+        <p class="impactcard__tag mono">Freshwater habitat</p>
+        <h3>Choosing which barriers to fix</h3>
+        <p>FIPEX and the Dendritic Connectivity Index score how dams and culverts fragment rivers and rank restoration options by return on investment.</p>
+        <p class="impactcard__out mono">→ Used by DFO, Parks Canada and Memorial University</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section stack" aria-labelledby="stack-title">
+  <div class="wrap">
+    <p class="eyebrow">The Strait of Georgia Ecosystem Model</p>
+    <h2 id="stack-title" class="display">One model family, sunlight to orcas</h2>
+    <p class="section__intro">SOGEM is a set of linked models. Each layer passes its output up to the next, so a change in winds or river flow can be traced through plankton blooms to salmon, seals and killer whales.</p>
+    <ol class="strata">
+      <li class="stratum reveal" style="--c: var(--glow)">
+        <span class="stratum__depth mono">Layer 1</span>
+        <div><h3>HOTSSea</h3><p class="stratum__kind mono">Ocean physics · NEMO</p></div>
+        <p>A 1.5 km hindcast of temperature, salinity, currents and mixing, 1980–2018.</p>
+        <span class="pill pill--ok">Published 2025</span>
+      </li>
+      <li class="stratum reveal" style="--c: #8ef0c4">
+        <span class="stratum__depth mono">Layer 2</span>
+        <div><h3>SOGEM-LTL</h3><p class="stratum__kind mono">Plankton · Ecospace</p></div>
+        <p>Light, mixing and simple nutrient dynamics drive diatoms, flagellates and zooplankton across space and season.</p>
+        <span class="pill pill--status">In revision</span>
+      </li>
+      <li class="stratum reveal" style="--c: var(--sun)">
+        <span class="stratum__depth mono">Layer 3</span>
+        <div><h3>SOGEM-UTL</h3><p class="stratum__kind mono">Food web · Ecopath with Ecosim</p></div>
+        <p>Forage fish, salmon life stages, hake, seabirds, seals, whales and fisheries, fitted to decades of time series.</p>
+        <span class="pill">In preparation</span>
+      </li>
+      <li class="stratum reveal" style="--c: var(--note)">
+        <span class="stratum__depth mono">Layer 4</span>
+        <div><h3>SOGEM-E2E</h3><p class="stratum__kind mono">End to end</p></div>
+        <p>The coupled system, used to compare bottom-up food supply with top-down predation as drivers of juvenile salmon survival.</p>
+        <span class="pill">PhD final chapter</span>
+      </li>
+    </ol>
+    <div class="stack__cta reveal">
+      {% if site.sogem_url %}
+      <a class="btn btn--glow" href="{{ site.sogem_url }}">Dive into the living food web</a>
+      {% else %}
+      <span class="btn btn--disabled" aria-disabled="true">Living food web explorer</span>
+      <span class="pill pill--note">In development</span>
+      <p class="muted small">An interactive 3D tour of the SOGEM food web is in development. A link will appear here when it launches.</p>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="themes-title">
+  <div class="wrap">
+    <div class="section__head">
+      <div><p class="eyebrow">Research</p><h2 id="themes-title" class="display">What I work on</h2></div>
+      <a class="arrowlink" href="/research/">All research</a>
+    </div>
+    <div class="cards">
+      {% for r in research %}
+      <a class="card reveal" href="/research/#{{ r.id }}">
+        <div class="card__img"><img src="{{ r.image }}" alt="" loading="lazy"></div>
+        <div class="card__body">
+          <p class="eyebrow">{{ r.kicker }}</p>
+          <h3>{{ r.title }}</h3>
+          <p>{{ r.short }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="pubs-title">
+  <div class="wrap">
+    <div class="section__head">
+      <div><p class="eyebrow">Publications</p><h2 id="pubs-title" class="display">Selected work</h2></div>
+      <a class="arrowlink" href="/publications/">All {{ publications | length }} publications</a>
+    </div>
+    <ol class="publist publist--featured">
+      {% set showSummary = true %}
+      {% for p in publications | where("featured", true) %}{% include "pub.njk" %}{% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="talks-title">
+  <div class="wrap">
+    <div class="section__head">
+      <div><p class="eyebrow">Talks &amp; appearances</p><h2 id="talks-title" class="display">On the record</h2></div>
+      <a class="arrowlink" href="/talks/">All talks</a>
+    </div>
+    <div class="appear">
+      {% for t in talks | where("highlight", true) | newestFirst %}
+      <article class="appear__item reveal">
+        <p class="mono appear__date">{{ t.date | monthYear }} · {{ t.type | capitalize }}</p>
+        <h3>{% if t.url %}<a href="{{ t.url }}">{{ t.title }}</a>{% else %}{{ t.title }}{% endif %}</h3>
+        <p class="muted">{{ t.venue }}</p>
+        {% if t.abstract %}<p>{{ t.abstract }}</p>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+    <ul class="talkmini">
+      {% for t in talks | whereNot("type", "lecture") | newestFirst | limit(5) %}
+      <li><span class="mono">{{ t.date | monthYear }}</span><span>{{ t.title }}</span><span class="muted">{{ t.location }}</span></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section contact" aria-labelledby="contact-title">
+  <div class="wrap contact__inner reveal">
+    <p class="eyebrow">Contact</p>
+    <h2 id="contact-title" class="display">Collaborations, models, data</h2>
+    <p class="lead">Interested in ecosystem modelling of the Salish Sea, the HOTSSea hindcast, or FIPEX? The best way to reach me is LinkedIn.</p>
+    {% include "links.njk" %}
+  </div>
+</section>

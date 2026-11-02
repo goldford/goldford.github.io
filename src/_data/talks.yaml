@@ -1,0 +1,207 @@
+# Talks, panels, testimony and guest lectures. Any order (pages sort newest first).
+# type: panel | testimony | invited | conference | seminar | workshop | poster | lecture
+#   lecture = guest lecture in a course; these appear on /teaching/ rather than /talks/.
+# highlight: true puts it in "On the record" on the home and talks pages.
+# approx: true when only the month is known (shows month, not day).
+
+- date: 2026-06-10
+  type: invited
+  highlight: true
+  title: What can ocean-ecosystem simulations tell us about long-term environmental change in the Strait of Georgia?
+  venue: Sunshine Coast Ocean Festival (public talk)
+  location: Sechelt, BC
+  abstract: A public talk on why coho and Chinook survival fell in the early 1980s, and how a reconstructed ocean history (HOTSSea) and ecosystem simulations help test what changed for young salmon in the Strait.
+
+- date: 2026-05-05
+  type: panel
+  highlight: true
+  title: "Science, power, and decision-making"
+  role: Panellist
+  venue: "Reimagining the Future of Oceans and Fisheries: UBC Institute for the Oceans and Fisheries 10th Anniversary Symposium (moderator: Nathan Bennett, WWF)"
+  location: Vancouver, BC
+  url: https://oceans.ubc.ca/iof-10-year-anniversary-symposium/
+  abstract: How knowledge reaches policy and management in oceans and fisheries. I spoke on integrative ecosystem science since Holling and Walters, the data-synthesis gap that has slowed ecosystem-based management, and how AI tools are now closing it.
+
+- date: 2025-03-27
+  type: seminar
+  title: "A look at spring bloom timing in the Strait of Georgia (1980–2018) in 2D: evaluation of a NEMO-Ecospace model framework"
+  venue: DFO–UBC Modelling Group
+  location: Vancouver, BC
+
+- date: 2025-03-11
+  type: conference
+  title: "Supporting the Salish Sea Marine Survival Project and future research: the NEMO-Ecospace end-to-end model"
+  venue: American Fisheries Society, WA-BC Chapter Meeting
+  location: Vancouver, BC
+
+- date: 2025-01-07
+  type: invited
+  highlight: true
+  title: Insights from 'end-to-end' ecosystem modelling of the Strait of Georgia
+  venue: Salish Sea Science Roundtable, Puget Sound Institute (University of Washington), co-hosted with Fisheries and Oceans Canada
+  location: Online
+  url: https://www.pugetsoundinstitute.org/january-7-roundtable-will-share-insights-from-end-to-end-ecosystem-modeling-of-the-strait-of-georgia/
+  abstract: How ocean conditions, lower trophic level dynamics and species interactions shaped the Strait of Georgia over four decades, from linking Ecospace with a custom NEMO hindcast. Recorded and posted on the Encyclopedia of Puget Sound, where it has the most views of the series' 65+ videos.
+
+- date: 2024-06-04
+  type: conference
+  title: "No biogeochemical model? No problem! Using Ecospace in lieu of a biogeochemical model in the Salish Sea"
+  venue: Ecopath 40 Years Conference
+  location: Ostend, Belgium
+
+- date: 2024-03-06
+  type: poster
+  title: "HOTSSea v1: a NEMO-based 3D physical hindcast of the Salish Sea supporting ecosystem model development and Pacific salmon research"
+  venue: State of the Pacific Ocean (SOPO) meeting, Fisheries and Oceans Canada
+  location: Sidney, BC
+
+- date: 2024-02-14
+  type: seminar
+  title: "Physics to fisheries: multipurpose 'end-to-end' ecosystem model development for the Salish Sea"
+  venue: Pacific Salmon Foundation, Science Team
+  location: Vancouver, BC
+
+- date: 2023-12-03
+  type: seminar
+  title: Ecosystem modelling in support of marine spatial planning, conservation planning and ecosystem-based fisheries and oceans management
+  venue: Salish Sea Science Updates (Canadian federal)
+  location: Vancouver, BC
+
+- date: 2023-05-16
+  type: workshop
+  title: Investigating decadal-scale changes affecting juvenile coho and Chinook survival in the Strait of Georgia using the SS1500 end-to-end model
+  venue: Salish Sea Marine Survival Project Transboundary Workshop
+  location: Bellingham, WA
+
+- date: 2022-09-16
+  type: seminar
+  title: An overview of recent work with hatchery data to support research on early marine salmon survival
+  venue: DFO Salmonid Enhancement Program, PSSI Hatchery Renewal managers
+  location: Vancouver, BC
+
+- date: 2022-06-13
+  type: seminar
+  title: "NEMO-Ecospace-1500: an end-to-end ecosystem model for the Strait of Georgia"
+  venue: Pacific Salmon Foundation staff retreat
+  location: Cowichan, BC
+
+- date: 2022-05-05
+  type: testimony
+  highlight: true
+  title: Expert witness, study of "Science at the Department of Fisheries and Oceans"
+  venue: House of Commons Standing Committee on Fisheries and Oceans (FOPO), 44th Parliament, Meeting 21
+  location: Ottawa, ON
+  url: https://www.ourcommons.ca/DocumentViewer/en/44-1/FOPO/meeting-21/evidence
+  abstract: Invited testimony on data integration, how DFO scopes its science questions, and predator–prey interactions in the Strait of Georgia. The Committee's 2023 report made 48 recommendations to the Minister.
+
+- date: 2022-03-31
+  type: lecture
+  title: Towards an end-to-end spatial-temporal EwE model for investigating Pacific salmon early marine survival
+  venue: "FISH 501: Ecosystem Modelling, UBC Institute for the Oceans and Fisheries"
+  location: Vancouver, BC
+
+- date: 2022-02-24
+  approx: true
+  type: conference
+  title: "Are predators to blame? Using integrative ecosystem modelling to investigate early marine survival of coho and Chinook salmon in the Salish Sea"
+  venue: Canadian Conference for Fisheries Research (CCFFR)
+  location: Vancouver, BC
+
+- date: 2022-02-24
+  approx: true
+  type: conference
+  title: "River connectivity from a fish's perspective: modifying the Dendritic Connectivity Index with distance limitations"
+  venue: Canadian Conference for Fisheries Research (CCFFR)
+  location: Vancouver, BC
+
+- date: 2022-01-18
+  type: seminar
+  title: Three lines of research into long-term marine ecosystem change in the Salish Sea
+  venue: DFO Pacific Aquatic Ecosystem and Marine Mammal Science Section
+  location: Vancouver, BC
+
+- date: 2021-12-01
+  type: seminar
+  title: "Pacific salmon from freshwater to the ocean: integrating knowledge on the early marine life history"
+  venue: UBC Institute for the Oceans and Fisheries Seminar
+  location: Vancouver, BC
+
+- date: 2021-03-08
+  type: invited
+  title: Evaluating Chinook and coho marine survival hypotheses using a spatially resolved end-to-end model for the central and northern Salish Sea
+  venue: NOAA WRAP Workshop
+  location: Online
+
+- date: 2021-01-28
+  type: invited
+  title: "Approaches to salmon life history modelling: an overview of Ecopath-Ecosim-Ecospace"
+  venue: North Pacific Anadromous Fish Commission, International Year of the Salmon, Salmonscape Workshop Series
+  location: Online
+
+- date: 2020-11-17
+  type: seminar
+  title: Modelling long-term ecosystem and productivity change in the Strait of Georgia pelagic zone
+  venue: UBC IOF Quantitative Modelling Group Seminar Series
+  location: Vancouver, BC
+
+- date: 2020-02-04
+  type: workshop
+  title: Evaluating marine survival hypotheses using a spatially resolved end-to-end model for the Strait of Georgia
+  venue: Salish Sea Marine Survival Project, Bottom-up Working Group
+  location: Victoria, BC
+
+- date: 2019-12-03
+  type: conference
+  title: "Whodunnit? The case of the dying salmon in the Salish Sea (an investigation using an end-to-end ecosystem model)"
+  venue: Ecopath 35 Years International Conference
+  location: St. Petersburg, FL
+
+- date: 2019-10-10
+  type: workshop
+  title: "Seals may not increase exploitable biomass in the Salish Sea: steps towards a new E2E ecosystem model"
+  venue: Salish Sea Marine Survival Juvenile Salmon Workshop
+  location: Victoria, BC
+
+- date: 2019-06-24
+  type: seminar
+  title: "Ecosystem models: supporting marine planning and ecosystem-based management"
+  venue: Fisheries and Oceans Canada
+  location: Vancouver, BC
+
+- date: 2019-06-03
+  type: conference
+  title: "Spatial-temporal fitting for ecosystem models: experiences and observations from Canada"
+  venue: EwE International Meeting
+  location: Barcelona, Spain
+
+- date: 2019-05-31
+  type: workshop
+  title: "Seals may not increase exploitable biomass in the Salish Sea: steps towards a new E2E ecosystem model"
+  venue: Salish Sea Marine Survival Pinniped Impact Seminar
+  location: Vancouver, BC
+
+- date: 2019-04-09
+  type: conference
+  title: "Preying on the weak? Possible non-additive effects of seal predation and stress-related mortality in juvenile coho and Chinook in the Salish Sea"
+  venue: American Fisheries Society, WA-BC Chapter Meeting
+  location: Bremerton, WA
+
+# Guest lectures (shown on /teaching/)
+- date: 2025-11-04
+  type: lecture
+  title: Fisheries data and stock assessment
+  venue: "EOSC 478: Introduction to Fisheries Science, University of British Columbia"
+  location: Vancouver, BC
+
+- date: 2023-04-06
+  approx: true
+  type: lecture
+  title: Modelling early marine survival of salmon with Ecosim and foraging arena theory
+  venue: "FISH 501: Ecosystem Modelling, UBC Institute for the Oceans and Fisheries (instructor V. Christensen)"
+  location: Vancouver, BC
+
+- date: 2019-11-20
+  type: lecture
+  title: "Systematic marine conservation planning: my experience with MPA network planning in Canada's Northern Shelf Bioregion"
+  venue: "FISH 507: Ocean Leaders, UBC Institute for the Oceans and Fisheries"
+  location: Vancouver, BC

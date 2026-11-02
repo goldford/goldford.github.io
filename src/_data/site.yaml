@@ -1,0 +1,40 @@
+# Site-wide settings. Edit here; every page picks these up.
+title: Greig Oldford
+url: https://goldford.github.io
+description: >-
+  Ecosystem scientist at Fisheries and Oceans Canada and PhD candidate at UBC. Ecosystem
+  models and spatial science that inform decisions on fisheries, salmon and marine
+  protected areas on Canada's Pacific coast.
+
+name: Greig Oldford
+role: Ecosystem Scientist & Modeller
+affiliations:
+  - Ecosystem Scientist · Fisheries and Oceans Canada, Pacific Region
+  - PhD Candidate · Institute for the Oceans and Fisheries, UBC
+location: Vancouver, British Columbia
+
+# Headshot: square, at least 800 px. Placeholder kept at /assets/img/headshot-placeholder.svg.
+headshot: /images/headshot-2026.jpg
+headshot_alt: Greig Oldford smiling, in a life jacket aboard a boat on the water
+
+# Leave blank to hide. Ask before publishing a personal address.
+email: ""
+
+links:
+  linkedin: https://www.linkedin.com/in/greig-oldford-1616385/
+  orcid: https://orcid.org/0000-0003-2976-0823
+  github: https://github.com/goldford
+  scholar: ""            # Google Scholar profile URL, if you have one
+  bluesky: ""
+
+cv_pdf: /files/Greig_Oldford_CV.pdf
+
+# SOGEM public site. Leave blank until it launches; the site shows "in development".
+sogem_url: ""
+
+nav:
+  - { label: Research, url: /research/ }
+  - { label: Publications, url: /publications/ }
+  - { label: Talks, url: /talks/ }
+  - { label: Teaching, url: /teaching/ }
+  - { label: CV, url: /cv/ }

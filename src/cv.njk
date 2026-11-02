@@ -1,0 +1,138 @@
+---
+layout: base.njk
+title: Curriculum Vitae
+permalink: /cv/
+bodyClass: cvpage
+description: Academic curriculum vitae of Greig Oldford, ecosystem scientist and modeller.
+---
+{% set peer = [] %}{% set inrev = [] %}
+{% for p in publications %}
+  {% if p.type == "journal" and p.status != "in revision" and p.status != "submitted" %}{% set peer = (peer.push(p), peer) %}{% endif %}
+  {% if p.type == "preprint" or p.status == "in revision" or p.status == "submitted" %}{% set inrev = (inrev.push(p), inrev) %}{% endif %}
+{% endfor %}
+{% set invited = [] %}{% set contributed = [] %}{% set lectures = [] %}
+{% for t in talks | newestFirst %}
+  {% if t.type == "lecture" %}{% set lectures = (lectures.push(t), lectures) %}
+  {% elif t.type in ["invited", "testimony", "panel"] %}{% set invited = (invited.push(t), invited) %}{% else %}{% set contributed = (contributed.push(t), contributed) %}{% endif %}
+{% endfor %}
+
+{% macro cite(p) %}
+<li class="cvpub">{{ p.authors | authors | safe }} ({{ p.year }}{% if p.status %}, {{ p.status }}{% endif %}). {{ p.title }}{% if not (p.title | last) in "?!." %}.{% endif %}
+  {% if p.venue %}<em>{{ p.venue }}</em>{% if p.details %}, {{ p.details }}{% endif %}.{% endif %}
+  {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">https://doi.org/{{ p.doi }}</a>{% elif p.url %}<a class="cv-url" href="{{ p.url }}">link</a>{% endif %}</li>
+{% endmacro %}
+
+{% macro talk(t) %}
+<li class="cvtalk"><span class="cv__when">{{ t.date | monthYear }}</span><span>{{ t.title }}{% if not (t.title | last) in "?!." %}.{% endif %} <em>{{ t.venue }}</em>, {{ t.location }}.</span></li>
+{% endmacro %}
+
+<article class="cv wrap">
+  <header class="cv__head">
+    <div>
+      <p class="eyebrow screen-only">Curriculum Vitae</p>
+      <h1 class="cv__name">{{ site.name }}</h1>
+      <p class="cv__role">{{ site.role }}</p>
+      {% for a in site.affiliations %}<p class="cv__aff">{{ a }}</p>{% endfor %}
+    </div>
+    <div class="cv__contact">
+      <p>{{ site.location }}</p>
+      <p><a href="{{ site.url }}">goldford.github.io</a></p>
+      <p><a href="{{ site.links.orcid }}">ORCID 0000-0003-2976-0823</a></p>
+      <p><a href="{{ site.links.linkedin }}">linkedin.com/in/greig-oldford-1616385</a></p>
+      <p><a href="{{ site.links.github }}">github.com/goldford</a></p>
+      {% if site.email %}<p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>{% endif %}
+      <p class="screen-only cv__dl"><a class="btn btn--glow" href="{{ site.cv_pdf }}" download>Download PDF</a></p>
+    </div>
+  </header>
+
+  <section class="cv__sec">
+    <h2>Research interests</h2>
+    <p>{{ cv.interests }}</p>
+  </section>
+
+  <section class="cv__sec">
+    <h2>Appointments</h2>
+    <ol class="cv__list">
+      {% for x in cv.positions %}
+      <li><span class="cv__when">{{ x.when }}</span>
+        <div><p><strong>{{ x.title }}</strong></p><p class="cv__org">{{ x.org }}</p>
+        {% if x.notes %}<ul class="cv__notes">{% for n in x.notes %}<li>{{ n }}</li>{% endfor %}</ul>{% endif %}</div></li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="cv__sec">
+    <h2>Education</h2>
+    <ol class="cv__list">
+      {% for e in cv.education %}
+      <li><span class="cv__when">{{ e.when }}</span><div><p><strong>{{ e.degree }}</strong>, {{ e.org }}</p>{% if e.note %}<p class="cv__org">{{ e.note }}</p>{% endif %}</div></li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="cv__sec">
+    <h2>Awards, fellowships &amp; funding</h2>
+    <ol class="cv__list cv__list--tight">
+      {% for a in cv.awards %}<li><span class="cv__when">{{ a.when }}</span><span>{{ a.what }}</span></li>{% endfor %}
+    </ol>
+  </section>
+
+  <section class="cv__sec">
+    <h2>Publications</h2>
+    <h3>Peer-reviewed articles</h3>
+    <ol class="cv__pubs" reversed>{% for p in peer %}{{ cite(p) }}{% endfor %}</ol>
+    <h3>Manuscripts in revision &amp; preprints</h3>
+    <ol class="cv__pubs" reversed>{% for p in inrev %}{{ cite(p) }}{% endfor %}</ol>
+    <h3>Book chapters</h3>
+    <ol class="cv__pubs" reversed>{% for p in publications | where("type", "chapter") %}{{ cite(p) }}{% endfor %}</ol>
+    <h3>Software &amp; data</h3>
+    <ol class="cv__pubs" reversed>{% for p in publications | where("type", "software") %}{{ cite(p) }}{% endfor %}
+      <li class="cvpub"><strong class="me">Oldford, G.</strong> (lead developer, 2009–present). FIPEX with the Dendritic Connectivity Index: ArcGIS add-in for river connectivity analysis. <a href="https://goldford.github.io/FIPEX_with_DCI_Website/">https://goldford.github.io/FIPEX_with_DCI_Website/</a></li>
+    </ol>
+    <h3>Reports &amp; theses</h3>
+    <ol class="cv__pubs" reversed>{% for p in publications %}{% if p.type in ["report", "thesis"] %}{{ cite(p) }}{% endif %}{% endfor %}</ol>
+    <h3>Other writing</h3>
+    <ol class="cv__pubs" reversed>{% for p in publications | where("type", "commentary") %}{{ cite(p) }}{% endfor %}</ol>
+  </section>
+
+  <section class="cv__sec">
+    <h2>Presentations</h2>
+    <h3>Invited talks, panels &amp; expert testimony</h3>
+    <ol class="cv__list cv__list--tight">{% for t in invited %}{{ talk(t) }}{% endfor %}</ol>
+    <h3>Conference, workshop &amp; seminar presentations</h3>
+    <ol class="cv__list cv__list--tight">{% for t in contributed %}{{ talk(t) }}{% endfor %}</ol>
+  </section>
+
+  <section class="cv__sec">
+    <h2>Teaching</h2>
+    <h3>Guest lectures</h3>
+    <ol class="cv__list cv__list--tight">{% for t in lectures %}{{ talk(t) }}{% endfor %}</ol>
+    <h3>Teaching assistant &amp; instructor</h3>
+    <ol class="cv__list cv__list--tight">
+      {% for t in cv.teaching %}<li><span class="cv__when">{{ t.when }}</span><span>{{ t.what }}. <em>{{ t.where }}</em>.</span></li>{% endfor %}
+    </ol>
+  </section>
+
+  <section class="cv__sec">
+    <h2>Supervision &amp; mentoring</h2>
+    <ol class="cv__list cv__list--tight">
+      {% for m in cv.mentoring %}<li><span class="cv__when">{{ m.when }}</span><span>{{ m.what }}</span></li>{% endfor %}
+    </ol>
+  </section>
+
+  <section class="cv__sec">
+    <h2>Service, leadership &amp; outreach</h2>
+    <ol class="cv__list cv__list--tight">
+      {% for s in cv.service %}<li><span class="cv__when">{{ s.when }}</span><span>{{ s.what }}</span></li>{% endfor %}
+    </ol>
+  </section>
+
+  <section class="cv__sec">
+    <h2>Technical skills</h2>
+    <dl class="cv__skills">
+      {% for s in cv.skills %}<div><dt>{{ s.area }}</dt><dd>{{ s.items }}</dd></div>{% endfor %}
+    </dl>
+  </section>
+
+  <p class="cv__foot">References available on request · Updated {{ build.label }}</p>
+</article>

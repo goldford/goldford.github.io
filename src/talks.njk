@@ -1,0 +1,62 @@
+---
+layout: base.njk
+title: Talks
+permalink: /talks/
+pageJs: /assets/js/filter.js
+description: Talks, invited lectures, panels and expert testimony by Greig Oldford.
+---
+{% set typeLabels = { panel: "Panel", testimony: "Testimony", invited: "Invited", conference: "Conference", seminar: "Seminar", workshop: "Workshop", poster: "Poster" } %}
+{% set allTalks = talks | whereNot("type", "lecture") %}
+<header class="pagehead">
+  <div class="wrap">
+    <p class="eyebrow">Talks &amp; appearances</p>
+    <h1 class="display display--xl">Talks, panels &amp; testimony</h1>
+    <p class="lead">Panels, public talks, conference presentations and expert testimony since 2019. Guest lectures are listed under <a href="/teaching/">Teaching</a>.</p>
+  </div>
+</header>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="appear">
+      {% for t in allTalks | where("highlight", true) | newestFirst %}
+      <article class="appear__item">
+        <p class="mono appear__date">{{ t.date | monthYear }} · {{ typeLabels[t.type] }}</p>
+        <h2 class="h3">{% if t.url %}<a href="{{ t.url }}">{{ t.title }}</a>{% else %}{{ t.title }}{% endif %}</h2>
+        <p class="muted">{{ t.venue }} · {{ t.location }}</p>
+        {% if t.abstract %}<p>{{ t.abstract }}</p>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="filterbar" data-filter="talklist">
+      <div class="seg" role="group" aria-label="Filter by type">
+        <button type="button" data-type="all" aria-pressed="true">All <span class="mono">{{ allTalks | length }}</span></button>
+        {% for key, label in typeLabels %}{% set n = allTalks | where("type", key) | length %}{% if n > 0 %}
+        <button type="button" data-type="{{ key }}" aria-pressed="false">{{ label }} <span class="mono">{{ n }}</span></button>{% endif %}{% endfor %}
+      </div>
+      <label class="search"><span class="sr-only">Search talks</span><input type="search" placeholder="Search titles, venues, places" data-search></label>
+    </div>
+    <p class="muted small" data-count aria-live="polite"></p>
+
+    <div id="talklist" class="timeline">
+      {% set sorted = allTalks | newestFirst %}
+      {% for y in sorted | uniqueYears("date") %}
+      <div class="yeargroup" data-group>
+        <h2 class="yeargroup__year mono">{{ y }}</h2>
+        <ol class="talks">
+          {% for t in sorted | inYear(y) %}
+          <li class="talk" data-type="{{ t.type }}">
+            <span class="talk__date mono">{{ t | talkDay }}</span>
+            <div>
+              <p class="talk__title">{% if t.url %}<a href="{{ t.url }}">{{ t.title }}</a>{% else %}{{ t.title }}{% endif %}</p>
+              <p class="muted">{{ t.venue }} · {{ t.location }}</p>
+            </div>
+            <span class="pill pill--{{ t.type }}">{{ typeLabels[t.type] }}</span>
+          </li>
+          {% endfor %}
+        </ol>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

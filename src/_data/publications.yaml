@@ -1,0 +1,164 @@
+# Publications, newest first.
+# type: journal | chapter | preprint | software | report | thesis | commentary
+# status (optional): "in press" | "in revision" | "submitted" | "preprint"
+# featured: true shows it on the home page.
+# Names matching "Oldford, G." are bolded automatically.
+
+- id: beaty2026
+  year: 2026
+  type: journal
+  status: in press
+  featured: true
+  # CHECK: the 2026 CV lists the first author as "Fiona, B.L."; written here as Beaty, F.
+  authors: Beaty, F., Martone, R. G., Cristiani, J., Oldford, G., Bodtker, K., Robb, C., Rubidge, E., Gale, K., Yang, K., Brown, K. H. T., Schubert, A., & McDougall, C.
+  title: Accounting for the effects of levels of protection on ecological representation improves protected area network design
+  venue: Ecological Applications
+  summary: Technical basis of the Great Bear Sea MPA network analysis, showing why levels of protection matter when measuring ecological representation.
+
+- id: oldford2026ltl
+  year: 2026
+  type: journal
+  status: in revision
+  featured: true
+  authors: Oldford, G., Hunt, B., Walters, C., & Christensen, V.
+  title: Evaluation of a spatial physics-forced EwE model with simple nutrient dynamics
+  # CHECK: journal name (CV says "Ecosystem Modeling")
+  venue: ""
+  summary: SOGEM-LTL. Ecospace forced by the HOTSSea hindcast and run with simple nutrient dynamics instead of a full biogeochemical model, then evaluated against observations.
+
+- id: finke2026
+  year: 2026
+  type: preprint
+  status: preprint
+  authors: Finke, J. F., Tai, T. C., Freshwater, C., Connors, B., Holdsworth, A. M., Oldford, G. L., Selbie, D. T., Stiff, H. W., & Thompson, P. L.
+  title: Climate impacts on sockeye salmon productivity vary across life stages and regions
+  venue: Preprint
+  doi: 10.64898/2026.08.26.746844
+
+- id: oldford2025hotssea
+  year: 2025
+  type: journal
+  featured: true
+  authors: Oldford, G., Jarníková, T., Christensen, V., & Dunphy, M.
+  title: "HOTSSea v1: a NEMO-based physical Hindcast of the Salish Sea (1980–2018) supporting ecosystem model development"
+  venue: Geoscientific Model Development
+  details: 18(2), 211–237
+  doi: 10.5194/gmd-18-211-2025
+  code: https://github.com/goldford/HOTSSea_v1_NEMOandSupportCode
+  summary: A 1.5 km NEMO ocean model reconstructing four decades of temperature, salinity and mixing in the Salish Sea. It is the physical foundation of SOGEM.
+
+- id: wiersma2025
+  year: 2025
+  type: journal
+  authors: Wiersma, Y. F., Mahlum, S., Oldford, G., Arkilanian, A., Kehler, D., & Cote, D.
+  title: Will a fish's perspective improve the ecological relevance of river connectivity metrics?
+  venue: River Research and Applications
+  details: 41(10), 2248–2259
+  doi: 10.1002/rra.70028
+
+- id: edwards2024pacea
+  year: 2024
+  type: software
+  authors: Edwards, A. M., Tai, T. C., Watson, J., Peña, M. A., Hilborn, A., Hannah, C. G., Rooper, C. N., Flynn, K. L., & Oldford, G.
+  title: "pacea: An R package of Pacific ecosystem information to help facilitate an ecosystem approach to fisheries management"
+  venue: Zenodo (v1.0.0)
+  doi: 10.5281/zenodo.13840804
+  code: https://github.com/pbs-assess/pacea
+
+- id: demutsert2024
+  year: 2024
+  type: chapter
+  authors: de Mutsert, K., Coll, M., Steenbeek, J., Ainsworth, C., Buszowski, J., Chagaris, D., Christensen, V., Heymans, S. J. J., Lewis, K. A., Libralato, S., Oldford, G., Piroddi, C., Romagnoni, G., Serpetti, N., Spence, M. A., & Walters, C.
+  title: Advances in spatial-temporal coastal and marine ecosystem modeling using Ecospace
+  venue: Treatise on Estuarine and Coastal Science (2nd ed.), Elsevier
+  details: 122–169
+  doi: 10.1016/B978-0-323-90798-9.00035-4
+
+- id: oldford2023fipex
+  year: 2023
+  type: journal
+  featured: true
+  authors: Oldford, G., Cote, D., Kehler, D. G., Riefesel, G. R., & Wiersma, Y. F.
+  title: "FIPEX v10.4: An ArcGIS Desktop Add-in for assessing impacts of fish passage barriers and longitudinal connectivity of rivers"
+  venue: SoftwareX
+  details: 23, 101469
+  doi: 10.1016/j.softx.2023.101469
+  code: https://github.com/goldford/FIPEX-with-the-DCI-10.4
+  summary: Open GIS software for scoring how dams and culverts fragment river networks, and for prioritizing which barriers to remove.
+
+- id: couture2022
+  year: 2022
+  type: journal
+  featured: true
+  authors: Couture, F., Oldford, G., Christensen, V., Barrett-Lennard, L., & Walters, C.
+  title: Requirements and availability of prey for northeastern Pacific southern resident killer whales
+  venue: PLOS ONE
+  details: 17(6), e0270523
+  doi: 10.1371/journal.pone.0270523
+
+- id: taft2022
+  year: 2022
+  type: report
+  authors: Taft, S., Oldford, G., Lilley, P. L., Oetterich, S. B., Morin, J., George, M., George, M., & Christensen, V.
+  title: "Reconstructing the pre-European contact shoreline of Burrard Inlet (Vancouver, BC, Canada) using participatory mapping and a two-eyed seeing approach"
+  venue: Institute for the Oceans and Fisheries Research Reports, University of British Columbia
+  url: https://open.library.ubc.ca/soa/cIRcle/collections/facultyresearchandpublications/52383/items/1.0407075
+
+- id: oldford2022ssrn
+  year: 2022
+  type: preprint
+  authors: Oldford, G., Cote, D., Kehler, D. G., Riefesel, G. R., & Wiersma, Y. F.
+  title: "FIPEX+DCI v10.4: Bridging network analysis and GIS for river connectivity assessment"
+  venue: SSRN preprint
+  doi: 10.2139/ssrn.4159582
+
+- id: steenbeek2021
+  year: 2021
+  type: journal
+  authors: Steenbeek, J., Buszowski, J., Chagaris, D., Christensen, V., Coll, M., Fulton, E. A., Katsanevakis, S., Lewis, K. A., Mazaris, A. D., Macias, D., de Mutsert, K., Oldford, G., Pennino, M. G., Piroddi, C., Romagnoni, G., Serpetti, N., Shin, Y.-J., Spence, M. A., & Stelzenmüller, V.
+  title: Making spatial-temporal marine ecosystem modelling better – a perspective
+  venue: Environmental Modelling & Software
+  details: 145, 105209
+  doi: 10.1016/j.envsoft.2021.105209
+
+- id: brownlee2020
+  year: 2020
+  type: report
+  authors: Brownlee, G., Lang, C., Oldford, G., & Virgen-Urcelay, A.
+  title: Technical aspects of marine spatial planning in Burrard Inlet
+  venue: Report and story map prepared for Tsleil-Waututh Nation
+  url: https://storymaps.arcgis.com/stories/f706a6e15fc942eab88a05af863b6ff4
+
+- id: oldford2020oped
+  year: 2020
+  type: commentary
+  authors: Oldford, G.
+  title: "It's time to call out denialism, on racism and on climate change"
+  venue: Canada's National Observer (opinion), 4 June 2020
+  url: https://www.nationalobserver.com/2020/06/04/opinion/its-time-call-out-denialism-racism-and-climate-change
+
+- id: martone2018
+  year: 2018
+  type: report
+  authors: Martone, R. G., Oldford, G., McDougall, C., Cristiani, J., Chow, A., Robb, C., Rubidge, E., Gale, K. S. P., Chaves, L., Damjkar, E., Mahaux, P., & Ban, S.
+  title: Assessing the contribution of established protected areas towards meeting MPA network objectives in the Northern Shelf Bioregion
+  venue: "In Chandler, P. C., King, S. A., & Boldt, J. (Eds.), State of the physical, biological and selected fishery resources of Pacific Canadian marine ecosystems in 2017. Canadian Technical Report of Fisheries and Aquatic Sciences"
+  details: "3266"
+  url: /files/2017_SOPO.pdf
+
+- id: mckay2017
+  year: 2017
+  type: journal
+  authors: McKay, S. K., Cooper, A. R., Diebel, M. W., Elkins, D., Oldford, G., Roghair, C., & Wieferich, D.
+  title: "Informing watershed connectivity barrier prioritization decisions: a synthesis"
+  venue: River Research and Applications
+  details: 33(6), 847–862
+  doi: 10.1002/rra.3021
+
+- id: oldford2013thesis
+  year: 2013
+  type: thesis
+  authors: Oldford, G.
+  title: Spatial optimisation of river restoration planning in Nova Scotia, Canada
+  venue: Master's thesis, School for Resource and Environmental Studies, Dalhousie University
+  url: https://dalspace.library.dal.ca/bitstream/handle/10222/36309/Oldford-Greig-MES-SRES-August-2013.pdf?sequence=1

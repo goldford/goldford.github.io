@@ -1,0 +1,112 @@
+# CV content not covered by publications.yaml / talks.yaml.
+
+interests: >-
+  End-to-end ecosystem modelling (physics to fisheries) · ocean hindcasting · food-web dynamics
+  and early marine survival of Pacific salmon · predator–prey interactions · marine spatial
+  planning and protected-area network design · river connectivity · science advice for
+  ecosystem-based management
+
+positions:
+  - when: 2023–present
+    title: Ecosystem Scientist
+    org: Science Branch, Fisheries and Oceans Canada, Pacific Region
+    notes:
+      - Lead developer of the NEMO-SS1500 Salish Sea ocean model (HOTSSea) on Linux HPC
+      - Ecosystem modelling and science advice on salmon, marine mammals and fisheries; subject-matter expert in CSAS peer review
+  - when: 2024–2025
+    title: Science Program Lead, Integrated Ecosystem Modelling
+    org: Regional Ecosystem Effects on Fish & Fisheries Section, Ecosystem Science Division, DFO Pacific
+    notes:
+      - Designed and led a new research program; won Competitive Science Research Fund support; hired and supervised a scientist
+      - Led collaborations with DFO, ECCC and university partners
+  - when: 2022–2023
+    title: Senior Marine Spatial Planning Officer and Science Advisor
+    org: Integrated Oceans Management, Ecosystem Management Branch, DFO Pacific
+    notes:
+      - Co-chaired the intergovernmental Tech-Data Subgroup for the Great Bear Sea MPA network
+  - when: 2018–present
+    title: PhD Researcher, Global Ocean Modelling Lab (supervisor V. Christensen)
+    org: Institute for the Oceans and Fisheries, University of British Columbia
+    notes:
+      - Funded by NSERC, MITACS, the Pacific Salmon Foundation and DFO through the Salish Sea Marine Survival Project
+  - when: 2021–2022
+    title: Researcher and Science Advisor (contract, education leave)
+    org: DFO Pacific and Parks Canada
+    notes:
+      - Studied cross-sectoral data use in fisheries and oceans management; findings went to the Regional Management Committee
+      - Updated FIPEX and ran a connectivity analysis of Ontario rivers for Parks Canada
+  - when: 2017–2018
+    title: Marine Spatial Planning Advisor
+    org: Integrated Oceans Management, Ecosystem Management Branch, DFO Pacific
+    notes:
+      - Managed technical aspects of MPA network planning for the Northern Shelf Bioregion; science–management liaison
+  - when: 2014–2017
+    title: Oceans Biologist
+    org: Integrated Oceans Management, Ecosystem Management Branch, DFO Pacific
+  - when: 2013–2014
+    title: GIS Specialist and Programmer
+    org: Oceans & Coastal Management Division, DFO Maritimes
+
+education:
+  # CHECK: expected completion year (CVs say 2025 and 2026)
+  - when: expected 2026
+    degree: PhD, Oceans and Fisheries (ecosystem modelling)
+    org: University of British Columbia
+    note: "End-to-end spatial ecosystem modelling of the Strait of Georgia. Supervisor: Villy Christensen"
+  - when: "2013"
+    degree: Master of Environmental Studies
+    org: Dalhousie University
+    note: Spatial optimisation of river restoration planning
+  - when: "2007"
+    degree: Advanced Diploma, Geographic Information Systems
+    org: Nova Scotia Community College (COGS)
+  - when: "2004"
+    degree: BSc, Environmental Science (Ecology)
+    org: University of Guelph
+
+awards:
+  # CHECK: CV says "BC Governor General's Award"; the old site said "BC Premier's Award (2024)".
+  - { when: "2024", what: "BC Premier's Award (team), Great Bear Sea MPA Network" }
+  - { when: "2023", what: "DFO Prix d'Excellence (team), Great Bear Sea MPA Network" }
+  - { when: "2024–2025", what: "DFO Competitive Science Research Fund (CSRF), integrated ecosystem modelling" }
+  - { when: "2020", what: "UBC President's Academic Excellence Initiative PhD Award" }
+  - { when: "2019–2021", what: "UBC Ocean Leaders Award & Fellowship" }
+  - { when: "2018–2021", what: "MITACS Accelerate PhD Fellowship" }
+  - { when: "2018–2020", what: "UBC Faculty of Science PhD Tuition Award" }
+  - { when: "2018", what: "UBC Faculty of Science Graduate Award" }
+  - { when: "2013–2014", what: "Centre for Art Tapes New Media Arts Scholarship" }
+  - { when: "2010", what: "Neil Munro Parks & Protected Areas Award" }
+  - { when: "2009–2011", what: "NSERC Industrial Postgraduate Scholarship" }
+  - { when: "2007", what: "ESRI Canada Scholarship" }
+
+teaching:
+  - { when: "2019–2020", what: "Teaching Assistant, Supervised Machine Learning II (DSCI 572) and Data Visualization (DSCI 531)", where: "Master of Data Science, UBC" }
+  - { when: "2011", what: "GIS course design and instruction (three tutorials)", where: "Strum Environmental (consulting)" }
+  - { when: "2009–2011", what: "Teaching Assistant and GIS lab instructor, Environment & Human Health (ENVS 3400); Intro to Environmental and Resource Management (ENVS 1100); Global Approaches to Environmental Decision Making (SUST 3000)", where: "Dalhousie University" }
+
+service:
+  - { when: "2018, 2022", what: "Co-chair, Tech-Data Subgroup, MPA Network Technical Team (Great Bear Sea / Northern Shelf Bioregion)" }
+  - { when: "2014–present", what: "Steering committee member and subject-matter expert, Canadian Science Advisory Secretariat (CSAS) peer reviews" }
+  - { when: "2026", what: "Participant, DFO Ocean Science Division machine-learning hackathon" }
+  - { when: "2020", what: "UBC Ocean Leaders Fellow" }
+  - { when: "2009–2013", what: "Executive Director, TEDxHalifax" }
+  - { when: "", what: "Assistant Coach, Guelph Special Olympics basketball team" }
+
+skills:
+  - { area: Ecosystem & ocean modelling, items: "Ecopath with Ecosim / Ecospace, NEMO, HPC (Linux), NetCDF, CDO/NCO" }
+  - { area: Programming & data science, items: "Python, R, Bash, VB.NET, JavaScript; supervised ML, clustering, data wrangling" }
+  - { area: Geospatial, items: "ArcGIS, QGIS, GeoPandas, geostatistics, cartography, ISO 19115 metadata" }
+  - { area: Visualization, items: "Matplotlib, ggplot2, Plotly/Dash, D3.js, WebGL" }
+  - { area: Science advice, items: "Briefings to senior management, CSAS processes, collaboration with First Nations, provinces and stakeholders" }
+
+teaching_interests:
+  - Ecosystem modelling (Ecopath with Ecosim, Ecospace) and ocean–ecosystem coupling
+  - Fisheries data, stock assessment and ecosystem-based fisheries management
+  - Marine spatial planning and systematic conservation planning
+  - GIS, spatial analysis and data science for environmental management
+  - Data visualization and scientific communication
+  - Models as teaching tools; oceans management and science advice
+
+mentoring:
+  - { when: "2024–2025", what: "Hired and supervised a scientist in the Integrated Ecosystem Modelling Program, DFO Pacific" }
+  - { when: "2017–2018", what: "Supervised casual staff on technical analyses for the Northern Shelf Bioregion MPA network, DFO" }

@@ -1,0 +1,41 @@
+---
+layout: base.njk
+title: Publications
+permalink: /publications/
+pageJs: /assets/js/filter.js
+description: Publications by Greig Oldford, including journal articles, preprints, software, book chapters and reports.
+---
+{% set types = [["all","All"],["journal","Articles"],["preprint","Preprints"],["chapter","Chapters"],["software","Software"],["report","Reports"],["thesis","Thesis"],["commentary","Commentary"]] %}
+<header class="pagehead">
+  <div class="wrap">
+    <p class="eyebrow">Publications</p>
+    <h1 class="display display--xl">Papers, software &amp; reports</h1>
+    <p class="lead">{{ publications | length }} items. My name is in bold. For citation metrics see <a href="{{ site.links.orcid }}">ORCID</a>{% if site.links.scholar %} or <a href="{{ site.links.scholar }}">Google Scholar</a>{% endif %}.</p>
+  </div>
+</header>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="filterbar" data-filter="publist">
+      <div class="seg" role="group" aria-label="Filter by type">
+        {% for t in types %}
+        {% set n = (publications | length) if t[0] == "all" else (publications | where("type", t[0]) | length) %}
+        {% if n > 0 %}<button type="button" data-type="{{ t[0] }}" aria-pressed="{{ 'true' if t[0] == 'all' else 'false' }}">{{ t[1] }} <span class="mono">{{ n }}</span></button>{% endif %}
+        {% endfor %}
+      </div>
+      <label class="search"><span class="sr-only">Search publications</span><input type="search" placeholder="Search titles, authors, journals" data-search></label>
+    </div>
+    <p class="muted small" data-count aria-live="polite"></p>
+
+    <div id="publist">
+    {% for y in publications | uniqueYears("year") %}
+      <div class="yeargroup" data-group>
+        <h2 class="yeargroup__year mono">{{ y }}</h2>
+        <ol class="publist">
+          {% for p in publications | where("year", y) %}{% include "pub.njk" %}{% endfor %}
+        </ol>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+</section>

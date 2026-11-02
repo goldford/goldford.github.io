@@ -1,0 +1,18 @@
+{# Renders one publication `p` as a list item. #}
+{% set typeLabels = { journal: "Article", chapter: "Chapter", preprint: "Preprint", software: "Software", report: "Report", thesis: "Thesis", commentary: "Commentary" } %}
+<li class="pub" data-type="{{ p.type }}" data-year="{{ p.year }}">
+  <div class="pub__meta">
+    <span class="pill pill--{{ p.type }}">{{ typeLabels[p.type] }}</span>
+    {% if p.status and p.status != "preprint" %}<span class="pill pill--status">{{ p.status }}</span>{% endif %}
+  </div>
+  <p class="pub__title">
+    {% set href = ("https://doi.org/" + p.doi) if p.doi else p.url %}
+    {% if href %}<a href="{{ href }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}
+  </p>
+  <p class="pub__authors">{{ p.authors | authors | safe }} ({{ p.year }}).</p>
+  <p class="pub__venue">{% if p.venue %}<em>{{ p.venue }}</em>{% if p.details %}, {{ p.details }}{% endif %}.{% endif %}
+    {% if p.doi %}<a class="mono doi" href="https://doi.org/{{ p.doi }}">doi:{{ p.doi }}</a>{% endif %}
+    {% if p.code %}<a class="mono doi" href="{{ p.code }}">code</a>{% endif %}
+  </p>
+  {% if showSummary and p.summary %}<p class="pub__summary">{{ p.summary }}</p>{% endif %}
+</li>

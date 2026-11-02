@@ -1,0 +1,52 @@
+---
+layout: base.njk
+title: Teaching
+permalink: /teaching/
+description: Teaching by Greig Oldford, including guest lectures in fisheries science and ecosystem modelling at UBC, teaching assistantships and mentoring.
+---
+{% set lectures = talks | where("type", "lecture") | newestFirst %}
+<header class="pagehead">
+  <div class="wrap">
+    <p class="eyebrow">Teaching &amp; mentoring</p>
+    <h1 class="display display--xl">Teaching the tools behind the decisions</h1>
+    <p class="lead">I teach how fisheries and ecosystem science gets made and used, from stock assessment and ecosystem models to conservation planning, drawing on my own work in government and research.</p>
+  </div>
+</header>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section__head"><div><p class="eyebrow">Guest lectures</p><h2 class="display">In the classroom</h2></div></div>
+    <div class="lectures">
+      {% for t in lectures %}
+      <article class="lecture reveal">
+        <p class="mono lecture__date">{{ t.date | monthYear }}</p>
+        <h3>{{ t.title }}</h3>
+        <p class="muted">{{ t.venue }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap teachgrid">
+    <div class="reveal">
+      <p class="eyebrow">Courses</p>
+      <h2 class="display">Teaching assistant &amp; instructor</h2>
+      <ol class="cv__list">
+        {% for t in cv.teaching %}<li><span class="cv__when">{{ t.when }}</span><div><p>{{ t.what }}</p><p class="cv__org">{{ t.where }}</p></div></li>{% endfor %}
+      </ol>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">Mentoring</p>
+      <h2 class="display">Supervision</h2>
+      <ol class="cv__list">
+        {% for m in cv.mentoring %}<li><span class="cv__when">{{ m.when }}</span><span>{{ m.what }}</span></li>{% endfor %}
+      </ol>
+      <p class="eyebrow" style="margin-top:36px">Teaching interests</p>
+      <ul class="interests">
+        {% for i in cv.teaching_interests %}<li>{{ i }}</li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

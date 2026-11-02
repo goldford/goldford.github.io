@@ -1,0 +1,57 @@
+---
+layout: base.njk
+title: Research
+permalink: /research/
+description: Research themes of Greig Oldford, covering end-to-end ecosystem modelling of the Salish Sea, the HOTSSea ocean hindcast, marine protected area networks and river connectivity.
+---
+<header class="pagehead">
+  <div class="wrap">
+    <p class="eyebrow">Research</p>
+    <h1 class="display display--xl">Connecting physics, food webs and decisions</h1>
+    <p class="lead">My work runs from building ocean and ecosystem models to using them, and other spatial science, in the hands of managers and partners.</p>
+    <nav class="toc" aria-label="Research themes">
+      {% for r in research %}<a href="#{{ r.id }}">{{ r.title }}</a>{% endfor %}
+    </nav>
+  </div>
+</header>
+
+{% for r in research %}
+<section id="{{ r.id }}" class="section theme {% if loop.index is even %}theme--flip{% endif %}">
+  <div class="wrap theme__grid">
+    <figure class="theme__fig reveal">
+      <img src="{{ r.image }}" alt="{{ r.image_alt }}" loading="lazy">
+    </figure>
+    <div class="theme__text reveal">
+      <p class="eyebrow">{{ r.kicker }}</p>
+      <h2 class="display">{{ r.title }}</h2>
+      <div class="prose">{{ r.body | md | safe }}</div>
+      {% if r.links %}
+      <p class="chips">{% for l in r.links %}<a class="chip" href="{{ l.url }}">{{ l.label }} ↗</a>{% endfor %}</p>
+      {% endif %}
+      {% if r.pubs %}
+      <details class="related">
+        <summary>Related publications ({{ r.pubs | length }})</summary>
+        <ol class="publist publist--compact">
+          {% for p in publications | pick(r.pubs) %}{% include "pub.njk" %}{% endfor %}
+        </ol>
+      </details>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">Open code</p>
+    <h2 class="display">Software &amp; repositories</h2>
+    <div class="repos">
+      <a class="repo" href="https://github.com/goldford/HOTSSea_v1_NEMOandSupportCode"><span class="mono">HOTSSea_v1_NEMOandSupportCode</span><span>NEMO configuration and support code for the HOTSSea hindcast</span></a>
+      <a class="repo" href="https://github.com/goldford/SOGEM-LTL-code"><span class="mono">SOGEM-LTL-code</span><span>Ecospace lower-trophic model runs and evaluation</span></a>
+      <a class="repo" href="https://github.com/goldford/Ecosystem-Model-Data-Framework"><span class="mono">Ecosystem-Model-Data-Framework</span><span>Forcing data and Ecopath data preparation</span></a>
+      <a class="repo" href="https://github.com/goldford/FIPEX-with-the-DCI-10.4"><span class="mono">FIPEX-with-the-DCI-10.4</span><span>ArcGIS add-in for river connectivity and barrier prioritization</span></a>
+      <a class="repo" href="https://github.com/goldford/DCI-R-Code-2020"><span class="mono">DCI-R-Code-2020</span><span>Dendritic Connectivity Index in R</span></a>
+      <a class="repo" href="https://github.com/pbs-assess/pacea"><span class="mono">pacea</span><span>R package of Pacific ecosystem information (contributor)</span></a>
+    </div>
+  </div>
+</section>

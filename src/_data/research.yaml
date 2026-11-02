@@ -1,0 +1,89 @@
+# Research themes. Used on the home page (cards) and /research/ (full write-ups).
+# pubs: ids from publications.yaml. image: path under /images.
+
+- id: sogem
+  kicker: PhD · 2018–present
+  title: End-to-end modelling of the Salish Sea
+  short: Linked models that follow energy from ocean physics through plankton to salmon, seals and orcas, used to test why juvenile salmon survival declined.
+  image: /images/Model_Diagram_2021-03-23.PNG
+  image_alt: Subway-map style diagram of the Strait of Georgia food web model
+  body: |
+    Survival of juvenile coho and Chinook salmon in the Strait of Georgia fell sharply from the 1980s onward, and the cause is still debated.
+    Was it less food at the right time, more predators such as harbour seals, or both acting together?
+
+    The **Strait of Georgia Ecosystem Model (SOGEM)** is my answer to how we test that. It is a family of linked models:
+    a NEMO ocean hindcast (HOTSSea) drives a spatial plankton model (SOGEM-LTL, Ecospace), which feeds an upper-trophic food web
+    (SOGEM-UTL, Ecopath with Ecosim) covering forage fish, salmon life stages, seabirds, seals and killer whales. The coupled
+    system (SOGEM-E2E) runs counterfactual experiments on the relative roles of bottom-up prey availability and top-down predation.
+
+    The work is part of the Salish Sea Marine Survival Project and my PhD in the Global Ocean Modelling Lab at UBC.
+  pubs: [oldford2026ltl, oldford2025hotssea, couture2022, demutsert2024, steenbeek2021]
+  links:
+    - { label: SOGEM-LTL code, url: "https://github.com/goldford/SOGEM-LTL-code" }
+    - { label: Ecosystem model data framework, url: "https://github.com/goldford/Ecosystem-Model-Data-Framework" }
+
+- id: hotssea
+  kicker: Ocean physics · 2020–2025
+  title: "HOTSSea: forty years of Salish Sea physics"
+  short: A 1.5 km NEMO hindcast of temperature, salinity and mixing from 1980 to 2018. It is the physical base of SOGEM and is open for others to use.
+  image: /images/windmap.png
+  image_alt: Map of wind forcing over the Salish Sea
+  body: |
+    Ecosystem models need a long, consistent physical record, and none existed for the Salish Sea before 2018. I built one.
+    HOTSSea v1 is a NEMO-based hindcast at 1.5 km resolution, forced by atmospheric reanalysis and river discharge,
+    and evaluated against decades of observations. It is published in *Geoscientific Model Development* (2025),
+    with the code and support tools released openly.
+  pubs: [oldford2025hotssea]
+  links:
+    - { label: HOTSSea code, url: "https://github.com/goldford/HOTSSea_v1_NEMOandSupportCode" }
+    - { label: NEMO Salish Sea 1500, url: "https://github.com/goldford/NEMO-Salish-Sea-1500" }
+
+- id: mpa
+  kicker: Marine planning · 2014–2026
+  title: Great Bear Sea MPA network
+  short: Technical lead on representation and gap analyses for a marine protected area network co-led with 17 First Nations and the Province of BC.
+  image: /images/mpanetwork.png
+  image_alt: Map of the Northern Shelf Bioregion MPA network planning area
+  body: |
+    From 2014 to 2023 I worked as a federal scientist and planner on the marine protected area network for the Northern Shelf Bioregion,
+    now the **Great Bear Sea**, in partnership with 17 First Nations, the Province of British Columbia, industry and stakeholders.
+    I co-chaired the intergovernmental Tech-Data Subgroup, led the inventory of spatial data, and scoped the analyses that
+    measured how well existing and proposed protection met conservation objectives.
+
+    The network action plan was endorsed in 2023, and the team received the DFO Prix d'Excellence and a BC Premier's Award.
+    The technical basis of the representation work is now in press in *Ecological Applications* (2026).
+  pubs: [beaty2026, martone2018]
+  links:
+    - { label: MPA network, url: "https://mpanetwork.ca" }
+    - { label: Network overview video, url: "https://www.youtube.com/watch?v=71ZZ9CTzXWc" }
+
+- id: rivers
+  kicker: Freshwater · 2008–present
+  title: River connectivity and FIPEX
+  short: Lead developer of FIPEX and the Dendritic Connectivity Index, open GIS tools for scoring how dams and culverts fragment river networks.
+  image: /images/fipex.png
+  image_alt: Screenshot of the FIPEX ArcGIS add-in showing a river network with barriers
+  body: |
+    Rivers are networks, so one barrier can cut off a whole watershed upstream. The **Fish Passage Extension (FIPEX)** with the
+    **Dendritic Connectivity Index (DCI)** helps managers see the cumulative effect of dams and culverts and decide which to fix first.
+    I have led its development since 2009, from my master's research on spatial optimisation of restoration through versions used by
+    DFO, Parks Canada and Memorial University.
+  pubs: [oldford2023fipex, wiersma2025, mckay2017, oldford2013thesis]
+  links:
+    - { label: FIPEX website, url: "https://goldford.github.io/FIPEX_with_DCI_Website/" }
+    - { label: FIPEX code, url: "https://github.com/goldford/FIPEX-with-the-DCI-10.4" }
+    - { label: DCI in R, url: "https://github.com/goldford/DCI-R-Code-2020" }
+
+- id: shoreline
+  kicker: Collaboration · 2020–2022
+  title: Burrard Inlet shoreline and marine planning
+  short: Helped Tsleil-Waututh Nation reconstruct Burrard Inlet's pre-contact shoreline through participatory mapping and two-eyed seeing.
+  image: /images/shorelinechange.png
+  image_alt: Map comparing historical and present-day shoreline of Burrard Inlet
+  body: |
+    Tsleil-Waututh Nation led a project to reconstruct the pre-European-contact shoreline and intertidal zone of Burrard Inlet.
+    I helped with cartography and with bringing Indigenous knowledge together with archival data in GIS, and co-authored the report.
+    With a team of graduate students I also produced an interactive story map on the technical side of marine spatial planning in the inlet.
+  pubs: [taft2022, brownlee2020]
+  links:
+    - { label: Story map, url: "https://storymaps.arcgis.com/stories/f706a6e15fc942eab88a05af863b6ff4" }
