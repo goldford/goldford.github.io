@@ -431,5 +431,6 @@ p { margin: 0 0 1em; }
   .cv--gc .cv__sec { padding-top: 7pt; }
   .cv--gc .cv__list > li { padding: 1.5pt 0; break-inside: auto; }
   .cv--gc .cv__notes li { break-inside: avoid; }
+  .cv--gc .cv__sec--long { break-before: page; }
   .cv--gc .cv__sec:not(.cv__sec--long) { break-inside: avoid; }
 }
