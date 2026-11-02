@@ -364,9 +364,9 @@ p { margin: 0 0 1em; }
 .cv__notes { margin: 6px 0 4px; padding-left: 18px; font-size: 14.5px; color: var(--ink-2); }
 .cv__notes li { margin: 2px 0; }
 .cv__list--tight > li { padding: 4px 0; }
-.cv__pubs { margin: 0 0 12px; padding-left: 30px; font-size: 15px; color: var(--ink-2); }
-.cv__pubs li { padding: 4px 0 4px 4px; }
-.cv__pubs li::marker { color: var(--muted); font-family: var(--f-mono); font-size: 12px; }
+.cv__pubs { list-style: none; margin: 0 0 12px; padding-left: 0; font-size: 15px; color: var(--ink-2); }
+.cv__pubs li { padding: 4px 0 4px 24px; text-indent: -24px; }
+.pubs__more { margin-top: 36px; max-width: 70ch; }
 .cv__pubs .me { color: var(--ink); }
 .cv__pubs a { word-break: break-all; font-size: 13px; }
 .cv__skills { margin: 0 0 14px; display: grid; gap: 6px; }
@@ -398,7 +398,7 @@ p { margin: 0 0 1em; }
   .cv__when { font-size: 8.5pt; line-height: 1.6; }
   .cv__org, .cv__notes { font-size: 9pt; }
   .cv__notes { margin: 1pt 0 2pt; }
-  .cv__pubs { font-size: 9.4pt; padding-left: 20pt; }
+  .cv__pubs { font-size: 9.4pt; padding-left: 0; }
   .cv__pubs li { padding: 1.5pt 0; break-inside: avoid; }
   .cv__pubs a { font-size: 8.5pt; color: #0b4f6c; }
   .cv__skills div { grid-template-columns: 140pt 1fr; font-size: 9.4pt; }

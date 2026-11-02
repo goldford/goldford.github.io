@@ -30,7 +30,7 @@ description: Research themes of Greig Oldford, covering end-to-end ecosystem mod
       {% endif %}
       {% if r.pubs %}
       <details class="related">
-        <summary>Related publications ({{ r.pubs | length }})</summary>
+        <summary>Related publications</summary>
         <ol class="publist publist--compact">
           {% for p in publications | pick(r.pubs) %}{% include "pub.njk" %}{% endfor %}
         </ol>
@@ -41,7 +41,7 @@ description: Research themes of Greig Oldford, covering end-to-end ecosystem mod
 </section>
 {% endfor %}
 
-<section class="section">
+<section id="code" class="section">
   <div class="wrap">
     <p class="eyebrow">Open code</p>
     <h2 class="display">Software &amp; repositories</h2>

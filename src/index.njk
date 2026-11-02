@@ -3,7 +3,6 @@ layout: base.njk
 bodyClass: home
 pageJs: /assets/js/foodweb.js
 ---
-{% set journals = publications | where("type", "journal") %}
 <section class="hero" aria-labelledby="hero-title">
   <canvas class="hero__canvas" data-foodweb aria-hidden="true"></canvas>
   <div class="hero__scrim" aria-hidden="true"></div>
@@ -141,19 +140,6 @@ pageJs: /assets/js/foodweb.js
       </a>
       {% endfor %}
     </div>
-  </div>
-</section>
-
-<section class="section" aria-labelledby="pubs-title">
-  <div class="wrap">
-    <div class="section__head">
-      <div><p class="eyebrow">Publications</p><h2 id="pubs-title" class="display">Selected work</h2></div>
-      <a class="arrowlink" href="/publications/">All {{ publications | length }} publications</a>
-    </div>
-    <ol class="publist publist--featured">
-      {% set showSummary = true %}
-      {% for p in publications | where("featured", true) %}{% include "pub.njk" %}{% endfor %}
-    </ol>
   </div>
 </section>
 

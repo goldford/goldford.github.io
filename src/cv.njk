@@ -7,7 +7,7 @@ description: Academic curriculum vitae of Greig Oldford, ecosystem scientist and
 ---
 {% set peer = [] %}{% set inrev = [] %}
 {% for p in publications %}
-  {% if p.type == "journal" and p.status != "in revision" and p.status != "submitted" %}{% set peer = (peer.push(p), peer) %}{% endif %}
+  {% if p.type in ["journal", "chapter"] and p.status != "in revision" and p.status != "submitted" %}{% set peer = (peer.push(p), peer) %}{% endif %}
   {% if p.type == "preprint" or p.status == "in revision" or p.status == "submitted" %}{% set inrev = (inrev.push(p), inrev) %}{% endif %}
 {% endfor %}
 {% set invited = [] %}{% set contributed = [] %}{% set lectures = [] %}
@@ -78,29 +78,25 @@ description: Academic curriculum vitae of Greig Oldford, ecosystem scientist and
   </section>
 
   <section class="cv__sec">
-    <h2>Publications</h2>
-    <h3>Peer-reviewed articles</h3>
-    <ol class="cv__pubs" reversed>{% for p in peer %}{{ cite(p) }}{% endfor %}</ol>
-    <h3>Manuscripts in revision &amp; preprints</h3>
-    <ol class="cv__pubs" reversed>{% for p in inrev %}{{ cite(p) }}{% endfor %}</ol>
-    <h3>Book chapters</h3>
-    <ol class="cv__pubs" reversed>{% for p in publications | where("type", "chapter") %}{{ cite(p) }}{% endfor %}</ol>
-    <h3>Software &amp; data</h3>
-    <ol class="cv__pubs" reversed>{% for p in publications | where("type", "software") %}{{ cite(p) }}{% endfor %}
-      <li class="cvpub"><strong class="me">Oldford, G.</strong> (lead developer, 2009–present). FIPEX with the Dendritic Connectivity Index: ArcGIS add-in for river connectivity analysis. <a href="https://goldford.github.io/FIPEX_with_DCI_Website/">https://goldford.github.io/FIPEX_with_DCI_Website/</a></li>
-    </ol>
-    <h3>Reports &amp; theses</h3>
-    <ol class="cv__pubs" reversed>{% for p in publications %}{% if p.type in ["report", "thesis"] %}{{ cite(p) }}{% endif %}{% endfor %}</ol>
-    <h3>Other writing</h3>
-    <ol class="cv__pubs" reversed>{% for p in publications | where("type", "commentary") %}{{ cite(p) }}{% endfor %}</ol>
-  </section>
-
-  <section class="cv__sec">
     <h2>Presentations</h2>
     <h3>Invited talks, panels &amp; expert testimony</h3>
     <ol class="cv__list cv__list--tight">{% for t in invited %}{{ talk(t) }}{% endfor %}</ol>
     <h3>Conference, workshop &amp; seminar presentations</h3>
     <ol class="cv__list cv__list--tight">{% for t in contributed %}{{ talk(t) }}{% endfor %}</ol>
+  </section>
+
+  <section class="cv__sec">
+    <h2>Publications &amp; research outputs</h2>
+    <h3>Peer-reviewed articles &amp; book chapters</h3>
+    <ul class="cv__pubs">{% for p in peer %}{{ cite(p) }}{% endfor %}</ul>
+    <h3>In revision &amp; preprints</h3>
+    <ul class="cv__pubs">{% for p in inrev %}{{ cite(p) }}{% endfor %}</ul>
+    <h3>Software, models &amp; data</h3>
+    <ul class="cv__pubs">{% for p in publications | where("type", "software") %}{{ cite(p) }}{% endfor %}
+      <li class="cvpub"><strong class="me">Oldford, G.</strong> (lead developer, 2009–present). FIPEX with the Dendritic Connectivity Index: ArcGIS add-in for river connectivity analysis. <a href="https://goldford.github.io/FIPEX_with_DCI_Website/">https://goldford.github.io/FIPEX_with_DCI_Website/</a></li>
+    </ul>
+    <h3>Reports, theses &amp; other writing</h3>
+    <ul class="cv__pubs">{% for p in publications %}{% if p.type in ["report", "thesis", "commentary"] %}{{ cite(p) }}{% endif %}{% endfor %}</ul>
   </section>
 
   <section class="cv__sec">

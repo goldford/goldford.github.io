@@ -1,6 +1,7 @@
 {# Renders one publication `p` as a list item. #}
 {% set typeLabels = { journal: "Article", chapter: "Chapter", preprint: "Preprint", software: "Software", report: "Report", thesis: "Thesis", commentary: "Commentary" } %}
-<li class="pub" data-type="{{ p.type }}" data-year="{{ p.year }}">
+{% if p.type == "preprint" or p.status in ["in revision", "submitted"] %}{% set grp = "review" %}{% elif p.type in ["journal", "chapter"] %}{% set grp = "peer" %}{% elif p.type == "software" %}{% set grp = "software" %}{% else %}{% set grp = "other" %}{% endif %}
+<li class="pub" data-type="{{ grp }}" data-year="{{ p.year }}">
   <div class="pub__meta">
     <span class="pill pill--{{ p.type }}">{{ typeLabels[p.type] }}</span>
     {% if p.status and p.status != "preprint" %}<span class="pill pill--status">{{ p.status }}</span>{% endif %}
