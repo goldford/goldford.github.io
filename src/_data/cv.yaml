@@ -28,7 +28,7 @@ positions:
     title: Senior Marine Spatial Planning Officer and Science Advisor
     org: Integrated Oceans Management, Ecosystem Management Branch, DFO Pacific
     notes:
-      - Co-chaired the intergovernmental Tech-Data Subgroup for the Great Bear Sea MPA network
+      - Co-chaired an intergovernmental technical working group for the Great Bear Sea MPA network
   - when: 2018–present
     title: PhD Researcher, Global Ocean Modelling Lab (supervisor V. Christensen)
     org: Institute for the Oceans and Fisheries, University of British Columbia
@@ -38,7 +38,7 @@ positions:
     title: Researcher and Science Advisor (contract, education leave)
     org: DFO Pacific and Parks Canada
     notes:
-      - Studied cross-sectoral data use in fisheries and oceans management; findings went to the Regional Management Committee
+      - Studied cross-sectoral data use in fisheries and oceans management; findings were used to brief DFO management
       - Updated FIPEX and ran a connectivity analysis of Ontario rivers for Parks Canada
   - when: 2017–2018
     title: Marine Spatial Planning Advisor
@@ -89,7 +89,7 @@ teaching:
   - { when: "2009–2011", what: "Teaching Assistant and GIS lab instructor, Environment & Human Health (ENVS 3400); Intro to Environmental and Resource Management (ENVS 1100); Global Approaches to Environmental Decision Making (SUST 3000)", where: "Dalhousie University" }
 
 service:
-  - { when: "2018, 2022", what: "Co-chair, Tech-Data Subgroup, MPA Network Technical Team (Great Bear Sea / Northern Shelf Bioregion)" }
+  - { when: "2018, 2022", what: "Co-chair, intergovernmental technical working group, Great Bear Sea MPA network (Northern Shelf Bioregion)" }
   - { when: "2014–present", what: "Steering committee member and subject-matter expert, Canadian Science Advisory Secretariat (CSAS) peer reviews" }
   - { when: "2026", what: "Participant, DFO Ocean Science Division machine-learning hackathon" }
   - { when: "2020", what: "UBC Ocean Leaders Fellow" }

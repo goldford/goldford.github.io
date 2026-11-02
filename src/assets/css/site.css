@@ -414,7 +414,7 @@ p { margin: 0 0 1em; }
   .cv__org, .cv__notes { font-size: 9pt; }
   .cv__notes { margin: 1pt 0 2pt; }
   .cv__pubs { font-size: 9.4pt; padding-left: 0; }
-  .cv__pubs li { padding: 1.5pt 0; break-inside: avoid; }
+  .cv__pubs li { padding: 1.5pt 0 1.5pt 14pt; text-indent: -14pt; break-inside: avoid; }
   .cv__pubs a { font-size: 8.5pt; color: #0b4f6c; }
   .cv__skills div { grid-template-columns: 140pt 1fr; font-size: 9.4pt; }
   .cv__foot { font-size: 8.5pt; }
