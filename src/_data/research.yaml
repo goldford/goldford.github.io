@@ -41,14 +41,14 @@
 - id: mpa
   kicker: Marine planning · 2014–2026
   title: Great Bear Sea MPA network
-  short: Technical lead on representation and gap analyses for a marine protected area network co-led with 17 First Nations and the Province of BC.
+  short: Part of the federal team on a marine protected area network planned with 17 First Nations and the Province of BC, co-leading representation and gap analyses for DFO.
   image: /images/mpanetwork.png
   image_alt: Map of the Northern Shelf Bioregion MPA network planning area
   body: |
-    From 2014 to 2023 I worked as a federal scientist and planner on the marine protected area network for the Northern Shelf Bioregion,
-    now the **Great Bear Sea**, in partnership with 17 First Nations, the Province of British Columbia, industry and stakeholders.
-    I co-chaired the intergovernmental Tech-Data Subgroup, led the inventory of spatial data, and scoped the analyses that
-    measured how well existing and proposed protection met conservation objectives.
+    Between 2014 and 2023 I worked as a federal scientist and planner on the marine protected area network for the Northern Shelf Bioregion,
+    now the **Great Bear Sea**, a collaboration among 17 First Nations, the Province of British Columbia and the Government of Canada,
+    with industry and stakeholders. On behalf of DFO I co-chaired the intergovernmental Tech-Data Subgroup, coordinated the inventory of
+    spatial data, and helped scope the analyses that measured how well existing and proposed protection met conservation objectives.
 
     The network action plan was endorsed in 2023, and the team received the DFO Prix d'Excellence and a BC Premier's Award.
     The technical basis of the representation work is now in press in *Ecological Applications* (2026).
@@ -82,7 +82,7 @@
   image_alt: Map comparing historical and present-day shoreline of Burrard Inlet
   body: |
     Tsleil-Waututh Nation led a project to reconstruct the pre-European-contact shoreline and intertidal zone of Burrard Inlet.
-    I helped with cartography and with bringing Indigenous knowledge together with archival data in GIS, and co-authored the report.
+    I helped with cartography and with bringing the knowledge of Tsleil-Waututh knowledge holders together with archival data in GIS, and co-authored the report.
     With a team of graduate students I also produced an interactive story map on the technical side of marine spatial planning in the inlet.
   pubs: [taft2022, brownlee2020]
   links:
