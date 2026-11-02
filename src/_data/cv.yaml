@@ -8,7 +8,7 @@ interests: >-
 
 positions:
   - when: 2025–present
-    title: Science Manager, Nearshore Ecosystems Section
+    title: Science Manager / Section Head, Nearshore Ecosystems Section
     org: Aquatic Diagnostics and Genomics Technologies, Science Branch, Fisheries and Oceans Canada, Pacific Science Enterprise Centre, West Vancouver
     notes:
       - Manage a group of research scientists and field and laboratory biologists; finances, hiring, field programs and research planning
@@ -70,7 +70,6 @@ education:
     org: University of Guelph
 
 awards:
-  # CHECK: CV says "BC Governor General's Award"; the old site said "BC Premier's Award (2024)".
   - { when: "2024", what: "BC Premier's Award (team), Great Bear Sea MPA Network" }
   - { when: "2023", what: "DFO Prix d'Excellence (team), Great Bear Sea MPA Network" }
   - { when: "2024–2025", what: "DFO Competitive Science Research Fund (CSRF), integrated ecosystem modelling" }

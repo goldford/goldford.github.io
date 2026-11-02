@@ -29,6 +29,12 @@ links:
 
 cv_pdf: /files/Greig_Oldford_CV.pdf
 
+# Unlisted CV for DFO hiring managers: not linked anywhere, noindex, not in the sitemap.
+# Anyone with the link (or who reads this public repo) can still open it.
+private_cv:
+  url: /cv-gc-8q4m/
+  pdf: /files/cv-gc-8q4m/Greig_Oldford_CV_DFO.pdf
+
 # SOGEM public site. Leave blank until it launches; the site shows "in development".
 sogem_url: ""
 

@@ -6,6 +6,7 @@
   {% set pageTitle = (title + " · " + site.name) if title else (site.name + " · " + site.role) %}
   <title>{{ pageTitle }}</title>
   <meta name="description" content="{{ description or site.description | striptags | trim }}">
+  {% if noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
   <meta name="theme-color" content="#020a14">
   <meta name="color-scheme" content="dark">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">

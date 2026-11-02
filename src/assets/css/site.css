@@ -374,6 +374,21 @@ p { margin: 0 0 1em; }
 .cv__skills dt { color: var(--ink); font-weight: 600; }
 .cv__skills dd { margin: 0; color: var(--ink-2); }
 .cv__foot { margin: 24px 0 0; color: var(--muted); font-size: 13.5px; }
+/* Government of Canada CV extras */
+.cv__top { display: grid; grid-template-columns: minmax(0, 330px) 1fr; gap: 36px; }
+.cv__pools { padding: 16px 18px; border: 1px solid rgba(127, 227, 255, .35); border-radius: 12px; background: rgba(127, 227, 255, .05); align-self: start; }
+.cv__poollist, .cv__status, .cv__results { list-style: none; padding: 0; margin: 0; }
+.cv__poollist li { display: grid; grid-template-columns: 54px 1fr; column-gap: 10px; padding: 5px 0; font-size: 14.5px; color: var(--ink-2); }
+.cv__poollist strong { color: var(--ink); grid-row: span 2; }
+.cv__poollist .mono { font-size: 12.5px; }
+.cv__poollist .cv__org { font-size: 13px; }
+.cv__status { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line); font-size: 13.5px; color: var(--ink-2); }
+.cv__status li { padding: 2px 0; }
+.cv__profile { font-size: 16.5px; line-height: 1.6; color: var(--ink); margin: 0; }
+.cv__results { display: grid; gap: 8px; margin-bottom: 14px; }
+.cv__results li { position: relative; padding-left: 22px; font-size: 15px; color: var(--ink-2); }
+.cv__results li::before { content: ""; position: absolute; left: 4px; top: .62em; width: 7px; height: 7px; border-radius: 50%; background: var(--kelp); }
+@media (max-width: 760px) { .cv__top { grid-template-columns: 1fr; gap: 20px; } }
 @media (max-width: 640px) {
   .cv__contact { text-align: left; }
   .cv__list > li, .cv__skills div { grid-template-columns: 1fr; gap: 0; }
@@ -403,4 +418,18 @@ p { margin: 0 0 1em; }
   .cv__pubs a { font-size: 8.5pt; color: #0b4f6c; }
   .cv__skills div { grid-template-columns: 140pt 1fr; font-size: 9.4pt; }
   .cv__foot { font-size: 8.5pt; }
+  .cv__top { grid-template-columns: 185pt 1fr; gap: 14pt; }
+  .cv__pools { padding: 6pt 8pt; border: .8pt solid #0b4f6c; border-radius: 4pt; background: none; }
+  .cv__poollist li { grid-template-columns: 30pt 1fr; padding: 1.5pt 0; font-size: 8.8pt; }
+  .cv__poollist .mono { font-size: 8pt; }
+  .cv__poollist .cv__org, .cv__status { font-size: 8.2pt; }
+  .cv__status { margin-top: 4pt; padding-top: 4pt; }
+  .cv__profile { font-size: 9.8pt; line-height: 1.45; }
+  .cv__results { gap: 2pt; margin-bottom: 4pt; }
+  .cv__results li { font-size: 9.4pt; padding-left: 12pt; break-inside: avoid; }
+  .cv__results li::before { left: 2pt; width: 4pt; height: 4pt; background: #0b4f6c; }
+  .cv--gc .cv__sec { padding-top: 7pt; }
+  .cv--gc .cv__list > li { padding: 1.5pt 0; break-inside: auto; }
+  .cv--gc .cv__notes li { break-inside: avoid; }
+  .cv--gc .cv__sec:not(.cv__sec--long) { break-inside: avoid; }
 }
