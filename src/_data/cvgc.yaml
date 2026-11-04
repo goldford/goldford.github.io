@@ -2,21 +2,21 @@
 # The page and PDF live at site.private_cv (see site.yaml). Education, awards and
 # publications are pulled from cv.yaml and publications.yaml.
 
-headline: Science Manager · Science Advisor · Ecosystem Scientist
+headline: Science Manager · Research Lead · Science Advisor
 
 contact:
   email: greig.oldford@dfo-mpo.gc.ca
   location: Vancouver, BC · open to relocation
 
 profile: >-
-  Versatile science leader with 13+ years at Fisheries and Oceans Canada across both the
-  Science and Ecosystem Management branches. I currently manage a section of research
-  scientists and field and laboratory biologists. Before that I designed and led a new
-  ecosystem modelling program, coordinated intergovernmental technical work for the Great
-  Bear Sea MPA network with First Nations and the Province of BC, and gave expert testimony
-  to the House of Commons Fisheries Committee. I move easily between field programs,
-  quantitative science, marine planning, policy and people management, and I turn complex
-  science into clear options for senior management, partners and the public.
+  Versatile science leader with 13+ years at Fisheries and Oceans Canada in research,
+  science management and advice, across both the Science and Ecosystem Management branches.
+  I currently manage a section of research scientists and field and laboratory biologists.
+  I have designed and led a funded ecosystem modelling program, led a 40-year Salish Sea
+  ocean hindcast to publication, coordinated intergovernmental technical work for the Great
+  Bear Sea MPA network with First Nations and the Province of BC, and given expert testimony
+  to Parliament. I move easily between research, field programs, planning, policy and people
+  management, and turn complex science into clear options for decision-makers.
 
 pools:
   - { level: PC-04, process: 21-DFO-NCR-EA-EOS-308850, note: National Capital Region }
@@ -28,22 +28,25 @@ status:
   - Completed Section Head training and certifications
 
 strengths:
+  - area: Research leadership
+    items: Designing and leading research programs, competitive funding, lead-authored papers, ocean and ecosystem model development, field and at-sea research
   - area: Science management
-    items: Budgets and financial management, staffing, performance management, field and at-sea programs, research planning aligned with departmental priorities
+    items: Budgets, staffing, performance management, field and at-sea programs, research planning aligned with departmental priorities
   - area: Science advice
-    items: Briefing notes and decks for senior management, CSAS peer review (steering committee and subject-matter expert), parliamentary testimony
+    items: Briefings for senior management, CSAS peer review (steering committee, subject-matter expert), parliamentary testimony
   - area: Partnerships
     items: First Nations, Province of BC, ECCC, Parks Canada, universities, industry and stakeholders
   - area: Technical depth
-    items: Ecosystem and ocean modelling, GIS and spatial analysis, data science (Python, R, HPC), marine spatial and conservation planning
+    items: Ecosystem and ocean modelling, GIS and spatial analysis, Python, R, HPC, marine spatial and conservation planning
 
 results:
-  - Recommended the Aquaculture Monitoring Program trial low-cost eDNA sampling of benthic communities under finfish farms; the advice to the Director and National Capital Region management secured the budget and a pilot field season (July–September 2026).
+  - Recommended the Aquaculture Monitoring Program trial low-cost eDNA sampling of benthic communities under finfish farms; the advice secured budget and a pilot field season (July–September 2026).
   - Kept the Nearshore Ecosystems Section on track during budget cuts in 2026, completing the research cruise and field season, hiring co-op students and developing a new research program.
   - Won Competitive Science Research Fund support to start the Integrated Ecosystem Modelling program; hired and supervised a scientist and delivered the final report in 2025.
+  - Led HOTSSea, a 40-year Salish Sea ocean hindcast, to publication (Geoscientific Model Development, 2025) after earlier attempts had stalled; it underpins the Strait of Georgia ecosystem model.
   - Co-led federal technical analyses, as co-chair of an intergovernmental technical working group, that informed the Great Bear Sea MPA network (endorsed 2023); team received the DFO Prix d'Excellence.
-  - Gave expert testimony to the House of Commons Standing Committee on Fisheries and Oceans (2022), which fed into its 2023 report "Science at the Department of Fisheries and Oceans" (48 recommendations to the Minister).
-  - Hosted briefings and site tours of the Pacific Science Enterprise Centre for the Minister, Deputy Minister, Assistant Deputy Minister and Director General.
+  - Expert witness to the House of Commons Fisheries Committee (2022); testimony fed into its 2023 report "Science at the Department of Fisheries and Oceans".
+  - Hosted briefings and site tours of the Pacific Science Enterprise Centre for the Minister, Deputy Minister, ADM and Director General.
 
 positions:
   - when: 2025–present
