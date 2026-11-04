@@ -13,8 +13,9 @@
 
     The **Strait of Georgia Ecosystem Model (SOGEM)** is my answer to how we test that. It is a family of linked models:
     a NEMO ocean hindcast (HOTSSea) drives a spatial plankton model (SOGEM-LTL, Ecospace), which feeds an upper-trophic food web
-    (SOGEM-UTL, Ecopath with Ecosim) covering forage fish, salmon life stages, seabirds, seals and killer whales. The coupled
-    system (SOGEM-E2E) runs counterfactual experiments on the relative roles of bottom-up prey availability and top-down predation.
+    (SOGEM-UTL, Ecopath with Ecosim) covering forage fish, salmon life stages, seabirds, seals and killer whales; SOGEM-UTL is the
+    final chapter of my PhD. The planned next step, SOGEM-E2E, is a spatial end-to-end Ecospace model that will run counterfactual
+    experiments on the relative roles of bottom-up prey availability and top-down predation.
 
     The work is part of the Salish Sea Marine Survival Project and my PhD in the Global Ocean Modelling Lab at UBC.
   pubs: [oldford2026ltl, oldford2025hotssea, couture2022, demutsert2024, steenbeek2021]
