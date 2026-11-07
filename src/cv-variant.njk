@@ -1,0 +1,14 @@
+---
+layout: base.njk
+title: CV (Government of Canada)
+pagination:
+  data: cvVariants
+  size: 1
+  alias: v
+permalink: "/cv-variant/{{ v.slug }}/"
+bodyClass: cvpage
+noindex: true
+eleventyExcludeFromCollections: true
+---
+{# Local-only tailored GC CVs; cvVariants is empty unless the private variants folder exists. #}
+{% set g = v.cvgc %}{% include "cvgc-body.njk" %}

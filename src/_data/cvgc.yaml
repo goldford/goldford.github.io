@@ -28,6 +28,9 @@ status:
   - Completed Section Head training and certifications
   - "In process: DFO All Hands on Science 2.0, leadership stream (BI-04 / PC-04, internal) and BI-02/03 / PC-02/03 (public)"
 
+# Publications shown on the CV, in order (ids from publications.yaml).
+selected_pubs: [beaty2026, oldford2025hotssea, oldford2023fipex, taft2022]
+
 strengths:
   - area: Research leadership
     items: Designing and leading research programs, competitive funding, lead-authored papers, ocean and ecosystem model development, field and at-sea research

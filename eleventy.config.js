@@ -1,5 +1,14 @@
 import yaml from "js-yaml";
 import markdownIt from "markdown-it";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { join, resolve } from "node:path";
+
+// Tailored GC CV variants live outside this public repo (default: ../greig_os/outreach/cv-variants,
+// or set CV_VARIANTS_DIR). Each *.yaml there holds { slug, pdf, cvgc: {overrides} }. They build only
+// on a machine that has that folder, so nothing tailored is ever deployed. See cv-variant.njk.
+export const cvVariantsDir = () =>
+  [process.env.CV_VARIANTS_DIR, "../greig_os/outreach/cv-variants"].filter(Boolean).map((d) => resolve(d)).find((d) => existsSync(d));
+
 
 const md = markdownIt({ html: true, typographer: true });
 
@@ -57,6 +66,16 @@ export default function (eleventyConfig) {
     return [...new Set(ys)].sort((a, b) => b - a);
   });
   eleventyConfig.addFilter("inYear", (arr = [], y) => arr.filter((x) => toDate(x.date).getUTCFullYear() === y));
+
+  eleventyConfig.addGlobalData("cvVariants", () => {
+    const dir = cvVariantsDir();
+    if (!dir) return [];
+    const base = yaml.load(readFileSync("src/_data/cvgc.yaml", "utf8"));
+    return readdirSync(dir).filter((f) => /\.ya?ml$/.test(f)).sort().map((f) => {
+      const v = yaml.load(readFileSync(join(dir, f), "utf8"));
+      return { ...v, dir, cvgc: { ...base, ...(v.cvgc || {}) } };
+    });
+  });
 
   eleventyConfig.addGlobalData("build", () => {
     const d = new Date();

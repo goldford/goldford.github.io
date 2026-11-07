@@ -5,9 +5,10 @@
 // set CHROME_PATH to point at a different browser.
 import puppeteer from "puppeteer-core";
 import yaml from "js-yaml";
-import { existsSync, copyFileSync, mkdirSync, createReadStream, statSync, readFileSync } from "node:fs";
+import { existsSync, copyFileSync, mkdirSync, createReadStream, statSync, readFileSync, readdirSync } from "node:fs";
 import { createServer } from "node:http";
 import { resolve, join, extname, dirname } from "node:path";
+import { cvVariantsDir } from "../eleventy.config.js";
 
 const browserPath = [
   process.env.CHROME_PATH,
@@ -25,6 +26,12 @@ if (!existsSync(join(root, "cv/index.html"))) { console.error("Build the site fi
 const site = yaml.load(readFileSync("src/_data/site.yaml", "utf8"));
 const jobs = [{ url: "/cv/", pdf: site.cv_pdf }];
 if (site.private_cv?.url && site.private_cv?.pdf) jobs.push(site.private_cv);
+// Tailored variants (local only): PDF goes to the variant's own folder, never into this repo.
+const vdir = cvVariantsDir();
+if (vdir) for (const f of readdirSync(vdir).filter((f) => /\.ya?ml$/.test(f))) {
+  const v = yaml.load(readFileSync(join(vdir, f), "utf8"));
+  if (v.slug && v.pdf) jobs.push({ url: `/cv-variant/${v.slug}/`, out: resolve(vdir, v.pdf) });
+}
 
 // Serve _site over HTTP so root-relative asset paths resolve.
 const types = { ".html": "text/html", ".css": "text/css", ".js": "text/javascript", ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" };
@@ -41,16 +48,18 @@ const browser = await puppeteer.launch({ executablePath: browserPath, headless: 
 try {
   for (const job of jobs) {
     // PDFs are committed under files/ (passthrough-copied to /files/ on build).
-    const rel = job.pdf.replace(/^\/+/, "");
-    const out = resolve(rel);
+    const rel = job.pdf?.replace(/^\/+/, "");
+    const out = job.out || resolve(rel);
     mkdirSync(dirname(out), { recursive: true });
     const page = await browser.newPage();
     await page.goto(`http://127.0.0.1:${server.address().port}${job.url}`, { waitUntil: "networkidle0" });
     await page.evaluate(() => document.fonts.ready);
     await page.pdf({ path: out, format: "letter", preferCSSPageSize: true, printBackground: false });
     await page.close();
-    mkdirSync(dirname(join(root, rel)), { recursive: true });
-    copyFileSync(out, join(root, rel));
+    if (!job.out) {
+      mkdirSync(dirname(join(root, rel)), { recursive: true });
+      copyFileSync(out, join(root, rel));
+    }
     console.log(`Wrote ${out}`);
   }
 } finally {
