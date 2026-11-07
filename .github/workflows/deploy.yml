@@ -17,6 +17,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      # The SOGEM preview step runs only once both secrets exist (see SOGEM-website work/integration/PLAN.md).
+      HAS_SOGEM_PREVIEW: ${{ secrets.SOGEM_READ_TOKEN != '' && secrets.SOGEM_PREVIEW_PASSWORD != '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -25,6 +28,20 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      - name: SOGEM preview (password-protected, /sogem/preview/)
+        if: env.HAS_SOGEM_PREVIEW == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.SOGEM_READ_TOKEN }}
+          STATICRYPT_PASSWORD: ${{ secrets.SOGEM_PREVIEW_PASSWORD }}
+        run: |
+          # Prebuilt prototype page from the private repo's rolling "preview" release.
+          mkdir -p "$RUNNER_TEMP/sogem"
+          gh release download preview -R goldford/SOGEM-website -p living-web.html -D "$RUNNER_TEMP/sogem"
+          mv "$RUNNER_TEMP/sogem/living-web.html" "$RUNNER_TEMP/sogem/index.html"
+          # Encrypt (AES-256; the browser decrypts with the password). Only the encrypted page is published.
+          npx --yes staticrypt@3.5.4 "$RUNNER_TEMP/sogem/index.html" --short -c false             -s "$(openssl rand -hex 16)" --remember 30 -d _site/sogem/preview             --template-title "SOGEM preview"             --template-instructions "Private preview of the SOGEM Living Web. Copyright: G. Oldford, 2026."
+          sed -i 's#<head>#<head><meta name="robots" content="noindex, nofollow">#' _site/sogem/preview/index.html
+          rm -rf "$RUNNER_TEMP/sogem"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
