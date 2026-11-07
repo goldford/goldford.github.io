@@ -96,6 +96,17 @@ service:
   - { when: "2009–2013", what: "Executive Director, TEDxHalifax" }
   - { when: "", what: "Assistant Coach, Guelph Special Olympics basketball team" }
 
+# Completed manuscript reviews only, listed by journal (manuscript IDs and titles stay confidential).
+reviewing:
+  - { journal: "Ocean & Coastal Management", when: "2026" }
+  - { journal: "Canadian Journal of Fisheries and Aquatic Sciences", when: "2025" }
+  # CHECK: invited Aug 2026 (ECOMOD-26-1660). Uncomment once the review is completed.
+  # - { journal: "Ecological Modelling", when: "2026" }
+
+# Notable invitations to review that were declined (shown as invitations, not reviews).
+review_invitations:
+  - { journal: "Nature Communications", when: "2025" }
+
 skills:
   - { area: Ecosystem & ocean modelling, items: "Ecopath with Ecosim / Ecospace, NEMO, HPC (Linux), NetCDF, CDO/NCO" }
   - { area: Programming & data science, items: "Python, R, Bash, VB.NET, JavaScript; supervised ML, clustering, data wrangling" }

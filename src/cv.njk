@@ -121,6 +121,11 @@ description: Academic curriculum vitae of Greig Oldford, ecosystem scientist and
     <ol class="cv__list cv__list--tight">
       {% for s in cv.service %}<li><span class="cv__when">{{ s.when }}</span><span>{{ s.what }}</span></li>{% endfor %}
     </ol>
+    {% if cv.reviewing %}<h3>Journal peer review</h3>
+    <ol class="cv__list cv__list--tight">
+      {% for r in cv.reviewing %}<li><span class="cv__when">{{ r.when }}</span><span><em>{{ r.journal }}</em></span></li>{% endfor %}
+      {% for r in cv.review_invitations %}<li><span class="cv__when">{{ r.when }}</span><span>Invited to review for <em>{{ r.journal }}</em></span></li>{% endfor %}
+    </ol>{% endif %}
   </section>
 
   <section class="cv__sec">
