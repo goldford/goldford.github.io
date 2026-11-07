@@ -30,6 +30,7 @@ jobs:
       - run: npm run build
       - name: SOGEM preview (password-protected, /sogem/preview/)
         if: env.HAS_SOGEM_PREVIEW == 'true'
+        continue-on-error: true   # an expired token must never break the personal site
         env:
           GH_TOKEN: ${{ secrets.SOGEM_READ_TOKEN }}
           STATICRYPT_PASSWORD: ${{ secrets.SOGEM_PREVIEW_PASSWORD }}
