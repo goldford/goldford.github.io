@@ -20,6 +20,9 @@ jobs:
     env:
       # The SOGEM preview step runs only once both secrets exist (see SOGEM-website work/integration/PLAN.md).
       HAS_SOGEM_PREVIEW: ${{ secrets.SOGEM_READ_TOKEN != '' && secrets.SOGEM_PREVIEW_PASSWORD != '' }}
+      # The Merlin preview step runs once a password exists plus a token that can read merlin_eco_integrator
+      # (MERLIN_READ_TOKEN, or SOGEM_READ_TOKEN if that PAT is extended to the merlin repo).
+      HAS_MERLIN_PREVIEW: ${{ (secrets.MERLIN_READ_TOKEN != '' || secrets.SOGEM_READ_TOKEN != '') && secrets.MERLIN_PREVIEW_PASSWORD != '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -43,6 +46,24 @@ jobs:
           npx --yes staticrypt@3.5.4 "$RUNNER_TEMP/sogem/index.html" --short -c false             -s "$(openssl rand -hex 16)" --remember 30 -d _site/sogem/preview             --template-title "SOGEM preview"             --template-instructions "Private preview of the SOGEM Living Web. Copyright: G. Oldford, 2026."
           sed -i 's#<head>#<head><meta name="robots" content="noindex, nofollow">#' _site/sogem/preview/index.html
           rm -rf "$RUNNER_TEMP/sogem"
+      - name: Merlin preview (password-protected, /merlin/preview/)
+        if: env.HAS_MERLIN_PREVIEW == 'true'
+        continue-on-error: true   # a missing asset or expired token must never break the personal site
+        env:
+          GH_TOKEN: ${{ secrets.MERLIN_READ_TOKEN || secrets.SOGEM_READ_TOKEN }}
+          STATICRYPT_PASSWORD: ${{ secrets.MERLIN_PREVIEW_PASSWORD }}
+        run: |
+          # Single-file snapshot demo from the private repo's rolling "preview" release (built locally in merlin_eco_integrator).
+          mkdir -p "$RUNNER_TEMP/merlin"
+          gh release download preview -R goldford/merlin_eco_integrator -p merlin-demo.html -D "$RUNNER_TEMP/merlin"
+          mv "$RUNNER_TEMP/merlin/merlin-demo.html" "$RUNNER_TEMP/merlin/index.html"
+          # Encrypt (AES-256; the browser decrypts with the password). Only the encrypted page is published.
+          npx --yes staticrypt@3.5.4 "$RUNNER_TEMP/merlin/index.html" --short -c false \
+            -s "$(openssl rand -hex 16)" --remember 30 -d _site/merlin/preview \
+            --template-title "Merlin preview" \
+            --template-instructions "Private early-alpha preview of Merlin. Illustrative only. Copyright: G. Oldford, 2026."
+          sed -i 's#<head>#<head><meta name="robots" content="noindex, nofollow">#' _site/merlin/preview/index.html
+          rm -rf "$RUNNER_TEMP/merlin"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
