@@ -27,6 +27,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("files");
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
+  // Prebuilt, staticrypt-encrypted previews. Kept outside src/ so Nunjucks never touches them.
+  eleventyConfig.addPassthroughCopy({ "previews/merlin": "merlin/preview" });
 
   // Bold my name in author lists.
   eleventyConfig.addFilter("authors", (s = "") =>
